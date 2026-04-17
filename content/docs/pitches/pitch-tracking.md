@@ -58,7 +58,7 @@ When scoring digitally, pitches are often represented as colored dots — one do
 
 Reading a row of dots left-to-right gives you the entire pitch sequence at a glance. A long string of green and yellow means the batter fought off a lot of pitches. A quick orange-red-red means they never got comfortable.
 
-<!-- TODO: Screenshot of colored pitch dots in an at-bat card showing a full count sequence -->
+![At-bat cards showing colored pitch dots — green for balls, red/orange for strikes](/images/screenshots/half-inning-complete.jpg)
 
 ## How Foul Balls Work
 

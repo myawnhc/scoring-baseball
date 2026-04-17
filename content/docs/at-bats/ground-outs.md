@@ -54,7 +54,7 @@ The ground out notation only records the batter's result. What happened to the o
 
 In BaseballScorer, after you record a ground out with runners on base, the app asks you what happened to each runner. You'll see toggles for each runner showing **SAFE**, **OUT**, or **STAY**, with smart defaults based on the situation (forced runners with a three-fielder sequence default to OUT, since that's probably a double play).
 
-<!-- TODO: Screenshot of runner resolution strip with SAFE/OUT toggles -->
+![Runner resolution cards showing advancement options for each baserunner](/images/screenshots/runner-resolution.jpg)
 
 ## Scoring a Ground Out in BaseballScorer
 

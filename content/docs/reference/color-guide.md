@@ -31,7 +31,7 @@ Once you internalize this, the colors stop being labels and start being informat
 | **Brown** | Baserunner events not caused by the batter | Wild pitch (WP), passed ball (PB), balk (BK) advancement |
 | **Gold** | Occupied bases | Filled bases on the diamond display |
 
-<!-- TODO: Screenshot showing a mix of colored at-bat cards — green hit, red strikeout, orange unknown -->
+![Inning summary showing color-coded at-bat cards — green for hits, red for strikeouts](/images/screenshots/half-inning-complete.jpg)
 
 ## Pitch Dot Colors
 
@@ -62,7 +62,7 @@ The at-bat card itself changes color based on state:
 
 The two shades of green let you scan an inning at a glance — light green cards are runners still on base, darker green cards are runners who came around to score. A column full of green means a big inning.
 
-<!-- TODO: Screenshot of a full inning column showing green and red card backgrounds -->
+![Half-inning complete view showing green and neutral card backgrounds](/images/screenshots/half-inning-complete.jpg)
 
 ## The Diamond
 
@@ -77,7 +77,7 @@ Gold was chosen because it's visible, warm, and distinct from both green and red
 
 During fielding sequences, the fielder positions are highlighted on the diamond so you can tap them in order. The active/selectable fielders appear distinctly from the background.
 
-<!-- TODO: Screenshot of the diamond with gold bases occupied and fielder numbers visible -->
+![Diamond with fielder numbers visible during a fielding sequence](/images/screenshots/fielding-sequence.jpg)
 
 ## Blue: The MLB Data Color
 
@@ -98,7 +98,7 @@ BaseballScorer fully supports dark mode. All colors are defined using adaptive a
 
 If you score in low-light conditions (a night game, a dark living room while watching TV), dark mode makes the scorecard much easier to read without the bright white background washing everything out.
 
-<!-- TODO: Screenshot of a scorecard in dark mode showing color consistency -->
+![BaseballScorer in dark mode — colors stay consistent against the dark background](/images/screenshots/dark-mode.jpg)
 
 ## Why This System Helps
 

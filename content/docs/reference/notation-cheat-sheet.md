@@ -182,7 +182,7 @@ These numbers are universal — you'll see them in box scores, broadcast graphic
 
 In BaseballScorer, fielder numbers appear on the diamond during fielding sequences. Tap the fielders who touched the ball, in order, to record the play. See [ground outs]({{< relref "/docs/at-bats/ground-outs" >}}) for the full fielding sequence flow.
 
-<!-- TODO: Screenshot of the diamond with fielder numbers visible during a fielding sequence -->
+![Diamond showing fielder position numbers during a fielding sequence](/images/screenshots/fielding-sequence.jpg)
 
 ---
 

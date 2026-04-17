@@ -69,7 +69,7 @@ These are conventions, not rules. What actually happens is what you record. If a
 
 To record a hit in BaseballScorer, tap the **1B**, **2B**, **3B**, or **HR** button in the outcome grid during an active at-bat.
 
-<!-- TODO: Screenshot of outcome button grid with hit buttons highlighted -->
+![Outcome button grid showing hit, out, and other result options](/images/screenshots/outcome-button-grid.jpg)
 
 After tapping the hit type, BaseballScorer will prompt you to resolve the runners — you'll see a runner action sheet showing where each current baserunner ended up. Tap to confirm their final position (or that they scored).
 

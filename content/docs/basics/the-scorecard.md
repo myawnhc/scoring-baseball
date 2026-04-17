@@ -10,7 +10,7 @@ A baseball scorecard is a grid. Rows are batters; columns are innings. Every cel
 
 That's the whole structure. Everything else is just notation inside those cells.
 
-<!-- TODO: Screenshot of a completed paper scorecard or BaseballScorer's scorecard view -->
+![BaseballScorer's scorecard view showing the full game grid](/images/screenshots/scorecard-full.jpg)
 
 ## The Layout
 
@@ -73,7 +73,7 @@ A scored run completes the diamond. A runner left on base when the inning ends l
 
 BaseballScorer's scorecard view is a faithful digital translation of the paper original.
 
-<!-- TODO: Screenshot of BaseballScorer scorecard view with callouts for lineup column, inning columns, and cell detail -->
+![Scorecard grid detail showing individual cell notation](/images/screenshots/scorecard-detail.jpg)
 
 **The grid is the same.** Rows are lineup slots; columns are innings. You scroll horizontally to move through innings, and the lineup column stays fixed so you always know who you're looking at.
 

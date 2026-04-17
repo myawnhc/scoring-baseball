@@ -61,6 +61,6 @@ Once you've scored a few innings, writing "6-3" for a routine grounder to short 
 
 When you record an out in the app, fielder position numbers appear directly on the interactive diamond. Tap the fielders in the order they handled the ball — tap 6 (shortstop), then 3 (first base) — and the app builds the notation for you.
 
-<!-- TODO: Screenshot of diamond with fielder numbers overlay -->
+![Fielding sequence view with fielder position numbers on the diamond](/images/screenshots/fielding-sequence.jpg)
 
 The same numbers appear in the completed notation on batter cards, the scorecard grid, and everywhere else a fielding play is displayed.

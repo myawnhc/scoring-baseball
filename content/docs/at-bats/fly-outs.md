@@ -68,7 +68,7 @@ If a runner leaves too early and the defense throws to the base for an appeal ou
 
 To record a fly out, tap **Fly Out**, **Line Out**, or **Foul Out** in the outcome button grid. BaseballScorer will then ask you to tap the fielder who made the catch — the diamond diagram highlights the fielding positions, and you tap the number of the fielder involved.
 
-<!-- TODO: Screenshot of fielder tap interface after selecting Fly Out -->
+![Fielding sequence interface showing fielder numbers on the diamond](/images/screenshots/fielding-sequence.jpg)
 
 For most fly outs, that's the entire entry: outcome type + one fielder tap. BaseballScorer confirms the out automatically.
 

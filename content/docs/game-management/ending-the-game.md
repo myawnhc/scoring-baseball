@@ -54,7 +54,7 @@ BaseballScorer detects the end of the game automatically based on the score, the
 
 **Half-inning complete view:** After three outs in any half-inning, the app shows a summary screen with the R/H/E/LOB recap and a "Next Half-Inning" button. The game doesn't advance automatically — you confirm the transition. This gives you a moment to double-check the inning before moving on.
 
-<!-- TODO: Screenshot of the half-inning complete view with R/H/E/LOB and Next Half-Inning button -->
+![Half-inning summary showing runs, hits, and the at-bat cards for the inning](/images/screenshots/half-inning-complete.jpg)
 
 **Walk-off detection:** When the home team scores the winning run, the app recognizes the walk-off condition and displays a celebratory screen with a fireworks icon and "Walk-Off!" heading. The End Game button appears here.
 
@@ -62,7 +62,7 @@ BaseballScorer detects the end of the game automatically based on the score, the
 
 **End Game and Delete:** The action menu always contains an "End Game" option if you want to close out manually — for example, if a game is called due to rain. A "Delete & Exit" option is also available if the game needs to be removed entirely.
 
-<!-- TODO: Screenshot of the action menu showing End Game and Delete & Exit options -->
+![Action menu with End Game option at the bottom](/images/screenshots/action-menu.jpg)
 
 ---
 

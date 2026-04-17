@@ -44,7 +44,7 @@ This is why a pitching gem and a lucky escape can look identical in the line sco
 
 In BaseballScorer, the line score is a **persistent strip** at the top of the scoring view. It's always visible as you score — you don't have to navigate away to see it.
 
-<!-- TODO: Screenshot of the line score strip at the top of the scoring view -->
+![Line score strip at the top of the scoring view showing runs per inning](/images/screenshots/scoring-view-full.jpg)
 
 **Current inning highlighted:** The inning you're currently scoring is visually highlighted in the strip, so you can always orient yourself at a glance.
 

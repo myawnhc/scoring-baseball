@@ -18,7 +18,7 @@ The scorecard grid works like a spreadsheet with baseball rules:
 
 To follow the game, you read down the first column for the first inning, then down the second column for the second inning, and so on. When the lineup turns over — when you get back to the top of the order — you continue from where you left off.
 
-<!-- TODO: Screenshot of the scorecard grid showing row/column structure with inning numbers labeled -->
+![Full scorecard grid showing lineup rows and inning columns](/images/screenshots/scorecard-full.jpg)
 
 ## What Goes in Each Cell
 
@@ -32,7 +32,7 @@ Each cell captures the full story of one plate appearance:
 
 See the [Scoring Notation]({{< relref "/docs/basics/scoring-notation" >}}) page for the full notation reference, and the [Mini Diamond]({{< relref "mini-diamond" >}}) page for how to read the base path diagrams.
 
-<!-- TODO: Screenshot of a completed cell showing all elements: diamond, notation, pitch dots, RBI -->
+![Scorecard cell detail showing diamond, notation, and pitch dots](/images/screenshots/scorecard-detail.jpg)
 
 ## Following the Game Flow
 
@@ -82,7 +82,7 @@ In BaseballScorer, the full scorecard grid is visible in **landscape orientation
 
 The header row (inning numbers), player rows, and totals row are all part of a **single shared horizontal scroll** — so everything moves together when you swipe left or right. You'll never have a misaligned header.
 
-<!-- TODO: Screenshot of the full landscape scorecard grid with header, rows, and totals visible -->
+![Complete scorecard view with header, player rows, and totals](/images/screenshots/scorecard-full.jpg)
 
 **Tap any cell** to open a detail popup with the full at-bat breakdown — pitch sequence, fielding notation, base paths, and any notes. This is useful for reviewing what happened in a specific at-bat without scrolling through the inning summary.
 

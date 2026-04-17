@@ -32,7 +32,7 @@ Undo works across innings. If you're in the fourth inning and realize the last a
 
 Both undo and redo recompute the full game state — score, outs, base runners, pitcher's count, lineup position — so everything stays consistent after the correction.
 
-<!-- TODO: Screenshot of the action menu showing Undo and Redo buttons -->
+![Action menu showing Undo Last At-Bat and other game management options](/images/screenshots/action-menu.jpg)
 
 ### Editing Completed At-Bats
 
@@ -45,7 +45,7 @@ Editable fields include:
 - **Flags** — toggle earned/unearned, RBI, and similar markers
 - **RBI count** — adjust how many runs batted in to credit
 
-<!-- TODO: Screenshot of the at-bat edit sheet with result, fielders, and flags options -->
+![Edit scoring panel showing result, fielders, and RBI controls](/images/screenshots/edit-scoring-detail.jpg)
 
 ### Retroactive Changes
 

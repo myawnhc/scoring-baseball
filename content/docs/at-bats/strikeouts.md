@@ -64,6 +64,6 @@ A dropped third strike (wild pitch or passed ball on strike three) is handled by
 
 **Without pitch tracking (manual entry):** Tap **K** (swinging) or **Kc** (looking) directly in the outcome button grid. The at-bat closes immediately. No additional input is needed for a standard strikeout.
 
-<!-- TODO: Screenshot of K and Kc buttons in BaseballScorer's outcome grid -->
+![Outcome button grid with K (swinging) and other result options](/images/screenshots/outcome-button-grid.jpg)
 
 The scorecard cell shows the K or Kc notation with a red background. If pitch dots are enabled, you'll see the sequence of pitches that led to the strikeout.

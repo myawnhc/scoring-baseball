@@ -15,7 +15,7 @@ Write **E** followed by the [fielder's number]({{< relref "/docs/basics/fielder-
 - **E8** — error by the center fielder
 - **E1** — error by the pitcher (usually a failed fielding play, not a pitch)
 
-<!-- TODO: Screenshot of BaseballScorer's fielder tap interface for recording an error -->
+![Fielding sequence view — tap the fielder who committed the error](/images/screenshots/fielding-sequence.jpg)
 
 ## What Counts as an Error
 

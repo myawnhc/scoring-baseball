@@ -97,7 +97,7 @@ At the large scoring size, the diamond is **tappable**: tap a base to toggle a r
 
 At the small summary size, the diamond gives you a quick visual "did they score?" answer for each at-bat in the inning without needing to read the full notation.
 
-<!-- TODO: Screenshot of the inning summary column showing a row of small diamonds with varied fill states -->
+![Inning summary column showing at-bat cards with small diamonds](/images/screenshots/half-inning-complete.jpg)
 
 The same canvas-drawing logic produces the diamond at all three sizes, so the visual language is consistent whether you're scoring live or reviewing the completed scorecard.
 

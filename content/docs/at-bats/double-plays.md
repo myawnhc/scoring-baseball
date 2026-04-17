@@ -65,7 +65,7 @@ The second out of the double play is recorded in the cell where that runner orig
 
 To record a ground ball double play, tap **Ground Out** and then select the fielders in sequence. BaseballScorer lets you tap up to three fielders for a single ground out sequence.
 
-<!-- TODO: Screenshot of BaseballScorer's fielder tap sequence for a double play -->
+![Fielding sequence interface for recording fielder-to-fielder plays](/images/screenshots/fielding-sequence.jpg)
 
 When you have runners on base and record a ground out, BaseballScorer opens the runner resolution screen. For each runner, you can mark them as **advanced**, **safe at next base**, or **out**. For a typical double play with a runner on first, you'd mark the runner on first as out (retired at second), and the batter is already out via the ground out.
 

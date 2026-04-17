@@ -46,7 +46,7 @@ Traditionally: a paper scorecard (often sold at the ballpark), a pencil, and a b
 
 If you're scoring on your phone or iPad, **BaseballScorer** is designed for exactly this. It guides you through each at-bat with tap-based input, tracks the pitch count automatically, and maintains the scorecard as you go — so you can focus on watching the game rather than hunting for the right symbol.
 
-<!-- TODO: Screenshot of BaseballScorer's scoring view during a live at-bat -->
+![BaseballScorer's main scoring view during a live at-bat](/images/screenshots/scoring-view-full.jpg)
 
 Whether you go paper or digital, the fundamentals are the same. The rest of this guide covers those fundamentals: [the scorecard itself]({{< relref "the-scorecard" >}}), the notation for every outcome, and how to handle the situations that come up in real games.
 
