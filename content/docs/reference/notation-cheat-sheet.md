@@ -48,9 +48,9 @@ Strikeouts appear in **red**.
 | Notation | Meaning |
 |---|---|
 | `K` | Strikeout swinging |
-| `Kc` | Strikeout looking (called third strike) |
+| Backwards K | Strikeout looking (called third strike) |
 
-The traditional paper convention for a called strikeout is a backwards K. BaseballScorer uses `Kc` for clarity on screen. See [strikeouts]({{< relref "/docs/at-bats/strikeouts" >}}).
+The traditional paper convention for a called strikeout is a backwards K — the letter K mirrored horizontally. BaseballScorer renders it the same way, flipping the K on screen just like you'd see on paper or on the K-count signs fans hang at the ballpark. See [strikeouts]({{< relref "/docs/at-bats/strikeouts" >}}).
 
 ---
 
@@ -191,7 +191,7 @@ In BaseballScorer, fielder numbers appear on the diamond during fielding sequenc
 | Color | Used for |
 |---|---|
 | Green | Hits, walks, errors, FC, stolen bases, safe outcomes |
-| Red | Strikeouts, outs, caught stealing |
+| Red | Strikeouts (K and backwards K), caught stealing |
 | Orange | Called strikes, fouls, unknown (`?`) |
 | Purple | HBP |
 | Blue | In play, auto-filled plays, MLB sync |

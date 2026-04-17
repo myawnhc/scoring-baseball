@@ -23,7 +23,7 @@ Once you internalize this, the colors stop being labels and start being informat
 | Color | Meaning | Where you see it |
 |---|---|---|
 | **Green** | Batter reached base safely; positive outcome | Hits (1B, 2B, 3B, HR), walks (BB, IBB), errors (E), fielder's choice (FC), stolen bases, safe advancement |
-| **Red** | Out recorded; negative outcome | Strikeouts (K, Kc), ground outs, fly outs, caught stealing (CS) |
+| **Red** | Strikeout; caught stealing | Strikeouts (K, backwards K), caught stealing (CS), out circles |
 | **Orange** | Called strikes, fouls, warnings, errors in the fielding sense, unknown | Called strike dots, foul ball dots, the `?` unknown notation, fielding errors during a sequence |
 | **Yellow** | Foul balls specifically | Foul pitch dots (in some display contexts) |
 | **Purple** | Hit by pitch; edit mode; review border | HBP notation, the edit-mode indicator on a card, review/flagged cards |
@@ -55,12 +55,12 @@ The at-bat card itself changes color based on state:
 
 | Background | Meaning |
 |---|---|
-| Default (neutral) | Normal completed at-bat |
-| Green tint | Batter reached base |
-| Red tint | Out recorded |
+| Default (neutral) | Batter made an out (ground out, fly out, etc.) |
+| Light green tint | Batter reached base (on base now) |
+| Darker green tint | Batter reached base and scored a run |
 | Purple border | Card is in edit mode or flagged for review |
 
-This means you can scan a column of cards and immediately see the shape of an inning — a run of green in the third inning, a cluster of red when the pitcher settled down.
+The two shades of green let you scan an inning at a glance — light green cards are runners still on base, darker green cards are runners who came around to score. A column full of green means a big inning.
 
 <!-- TODO: Screenshot of a full inning column showing green and red card backgrounds -->
 
