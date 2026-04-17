@@ -17,38 +17,34 @@ If you already know scoring and want to see how BaseballScorer handles a specifi
 
 ## Sections
 
-{{< columns >}}
+{{% columns %}}
+- ### [The Basics]({{< relref "/docs/basics" >}})
+  Why keep score, how the scorecard works, fielder numbers, and the notation system.
 
-### [The Basics]({{< relref "/docs/basics" >}})
-Why keep score, how the scorecard works, fielder numbers, and the notation system.
+- ### [Tracking Pitches]({{< relref "/docs/pitches" >}})
+  Ball-strike counts, pitch-by-pitch recording, and what happens automatically.
+{{% /columns %}}
 
-### [Tracking Pitches]({{< relref "/docs/pitches" >}})
-Ball-strike counts, pitch-by-pitch recording, and what happens automatically.
+{{% columns %}}
+- ### [Recording At-Bats]({{< relref "/docs/at-bats" >}})
+  Hits, outs, errors, double plays, sacrifices — every result type and how to notate it.
 
----
+- ### [Baserunning]({{< relref "/docs/runners" >}})
+  Stolen bases, caught stealing, wild pitches, tag-ups, and the extra-innings ghost runner.
+{{% /columns %}}
 
-### [Recording At-Bats]({{< relref "/docs/at-bats" >}})
-Hits, outs, errors, double plays, sacrifices — every result type and how to notate it.
+{{% columns %}}
+- ### [Managing the Game]({{< relref "/docs/game-management" >}})
+  Substitutions, pitching changes, challenges, undo, and ending the game.
 
-### [Baserunning]({{< relref "/docs/runners" >}})
-Stolen bases, caught stealing, wild pitches, tag-ups, and the extra-innings ghost runner.
+- ### [The Scorecard]({{< relref "/docs/scorecard" >}})
+  Reading the grid, the mini diamond, line scores, box scores, and printing.
+{{% /columns %}}
 
-{{< /columns >}}
+{{% columns %}}
+- ### [Advanced Features]({{< relref "/docs/advanced" >}})
+  MLB live integration, auto-fill, reconciliation, practice mode, and custom rulesets.
 
-{{< columns >}}
-
-### [Managing the Game]({{< relref "/docs/game-management" >}})
-Substitutions, pitching changes, challenges, undo, and ending the game.
-
-### [The Scorecard]({{< relref "/docs/scorecard" >}})
-Reading the grid, the mini diamond, line scores, box scores, and printing.
-
----
-
-### [Advanced Features]({{< relref "/docs/advanced" >}})
-MLB live integration, auto-fill, reconciliation, practice mode, and custom rulesets.
-
-### [Quick Reference]({{< relref "/docs/reference" >}})
-Cheat sheets for notation, colors, and fielder numbers.
-
-{{< /columns >}}
+- ### [Quick Reference]({{< relref "/docs/reference" >}})
+  Cheat sheets for notation, colors, and fielder numbers.
+{{% /columns %}}
