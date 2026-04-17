@@ -1,0 +1,33 @@
+baseURL = "https://myawnhc.github.io/scoring-baseball/"
+title = "How to Score Baseball"
+theme = "hugo-book"
+
+languageCode = "en-us"
+defaultContentLanguage = "en"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+[params]
+  BookTheme = "auto"
+  BookToC = true
+  BookSection = "docs"
+  BookRepo = "https://github.com/myawnhc/scoring-baseball"
+  BookSearch = true
+  BookDateFormat = "January 2, 2006"
+  description = "The complete guide to baseball scoring — notation, scorecards, and the BaseballScorer app for iPad and iPhone"
+
+[menu]
+  [[menu.after]]
+    name = "App Store"
+    url = "https://apps.apple.com/app/id6761680617"
+    weight = 10
+  [[menu.after]]
+    name = "Blog"
+    url = "https://theyawns.com"
+    weight = 20
