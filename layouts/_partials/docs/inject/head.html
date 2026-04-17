@@ -1,0 +1,44 @@
+<!-- iOS Smart App Banner — shows "View in App Store" on Safari/iOS -->
+<meta name="apple-itunes-app" content="app-id=6761680617">
+
+<!-- Additional Open Graph tags -->
+<meta property="og:site_name" content="How to Score Baseball">
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+
+<!-- Structured data: WebSite with search -->
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "How to Score Baseball",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "BaseballScorer"
+  }
+}
+</script>
+{{ end }}
+
+<!-- Structured data: Article for content pages -->
+{{ if and (not .IsHome) .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ or .Description .Summary | plainify | htmlUnescape }}",
+  "url": "{{ .Permalink }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "BaseballScorer"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>
+{{ end }}

@@ -4,6 +4,8 @@ theme = "hugo-book"
 
 languageCode = "en-us"
 defaultContentLanguage = "en"
+enableRobotsTXT = true
+copyright = "BaseballScorer"
 
 [markup]
   [markup.goldmark]
@@ -13,6 +15,11 @@ defaultContentLanguage = "en"
     startLevel = 2
     endLevel = 4
 
+[sitemap]
+  changeFreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
 [params]
   BookTheme = "auto"
   BookToC = true
@@ -21,6 +28,11 @@ defaultContentLanguage = "en"
   BookSearch = true
   BookDateFormat = "January 2, 2006"
   description = "The complete guide to baseball scoring — notation, scorecards, and the BaseballScorer app for iPad and iPhone"
+  appStoreId = "6761680617"
+  images = ["images/og-default.png"]
+
+[params.social]
+  og_site_name = "How to Score Baseball"
 
 [menu]
   [[menu.after]]
