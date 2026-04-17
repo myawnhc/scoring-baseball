@@ -25,7 +25,7 @@ Examples:
 - **FF2** — foul pop-up caught by the catcher
 - **F5** — pop-up caught by the third baseman
 
-<!-- TODO: Diagram of field with fielder numbers labeled -->
+![Baseball fielder position numbers — each position labeled 1 through 9 on the field](/images/diagrams/fielder-positions.svg)
 
 The fielder number is always the person who made the *catch*. If a center fielder drifts to right-center and catches a ball that the right fielder was also running toward, it's still F8 because 8 (center field) made the play.
 

@@ -26,7 +26,7 @@ Each segment is drawn either as a **heavy line** or a **thin line**:
 
 So a batter who hits a single has a heavy line on the home-to-first segment, and thin lines on the other three. A batter who hits a home run has heavy lines on all four segments.
 
-<!-- TODO: Diagram showing all four segments with labels, one single and one home run example -->
+![Diamond segments numbered 0-3, counterclockwise from home](/images/diagrams/diamond-segments-labeled.svg)
 
 ## Scored Runs
 
@@ -34,7 +34,7 @@ If a runner scores — crosses home plate — the **interior of the diamond is f
 
 A home run always has a filled interior and heavy lines on all four segments. A runner who reaches second but gets stranded there has heavy lines on two segments and an empty interior.
 
-<!-- TODO: Screenshot of mini diamonds showing: batter out, single (no score), double (no score), home run (scored), runner reaches third but stranded -->
+![Mini diamond examples — single, double, home run (filled), and caught stealing](/images/diagrams/mini-diamond-segments.svg)
 
 ## Base Squares
 
@@ -63,9 +63,7 @@ For full details on stolen base notation, see [Stolen Bases]({{< relref "/docs/r
 
 Caught stealing gets a distinctive mark: a **red half-line** extending partway along the base path segment, with a **perpendicular crossbar** at the midpoint. The crossbar looks like a small "T" turned sideways — it signals that the runner was tagged out mid-path.
 
-This crossbar notation makes caught stealing immediately recognizable as a baserunning out rather than a regular at-bat out.
-
-<!-- TODO: Screenshot of caught stealing notation showing the red half-line and crossbar -->
+This crossbar notation makes caught stealing immediately recognizable as a baserunning out rather than a regular at-bat out. You can see this in the caught stealing example in the diagram above — the red half-line stops partway along the segment with a perpendicular bar.
 
 ## Multiple Runners in One Cell
 

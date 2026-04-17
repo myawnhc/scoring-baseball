@@ -36,7 +36,7 @@ The batter circles all the bases and scores. Write **HR**. All four lines of the
 
 **Inside-the-park home runs** are scored identically (**HR**). The distinction is colorful but statistically it doesn't matter — the batter touched all four bases.
 
-<!-- TODO: Diagram of mini diamonds showing 1B, 2B, 3B, and HR paths -->
+![Mini diamond examples — single, double, home run (filled), and caught stealing](/images/diagrams/mini-diamond-segments.svg)
 
 ## Bunt Singles
 

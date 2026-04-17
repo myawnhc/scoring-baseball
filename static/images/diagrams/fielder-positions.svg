@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 480" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <style>
+      .field { fill: #4a8c3f; }
+      .dirt { fill: #c4956a; }
+      .grass-infield { fill: #5a9c4f; }
+      .line { stroke: #fff; stroke-width: 2; fill: none; }
+      .base { fill: #fff; stroke: #ccc; stroke-width: 1; }
+      .label-circle { fill: #1a1a1a; }
+      .label-text { fill: #fff; font-size: 16px; font-weight: 700; text-anchor: middle; dominant-baseline: central; }
+      .pos-text { fill: #1a1a1a; font-size: 12px; font-weight: 500; text-anchor: middle; }
+      .number-text { fill: #666; font-size: 11px; text-anchor: middle; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Outfield grass -->
+  <path d="M 0,280 Q 0,40 250,20 Q 500,40 500,280 Z" class="field"/>
+
+  <!-- Infield dirt arc -->
+  <path d="M 100,340 Q 100,180 250,150 Q 400,180 400,340 Z" class="dirt"/>
+
+  <!-- Infield grass diamond -->
+  <polygon points="250,170 340,270 250,370 160,270" class="grass-infield"/>
+
+  <!-- Foul lines -->
+  <line x1="250" y1="390" x2="30" y2="80" class="line" stroke-opacity="0.5"/>
+  <line x1="250" y1="390" x2="470" y2="80" class="line" stroke-opacity="0.5"/>
+
+  <!-- Base paths -->
+  <line x1="250" y1="380" x2="340" y2="270" stroke="#fff" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="340" y1="270" x2="250" y2="170" stroke="#fff" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="250" y1="170" x2="160" y2="270" stroke="#fff" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="160" y1="270" x2="250" y2="380" stroke="#fff" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Bases -->
+  <rect x="333" y="263" width="14" height="14" transform="rotate(45 340 270)" class="base"/>
+  <rect x="243" y="163" width="14" height="14" transform="rotate(45 250 170)" class="base"/>
+  <rect x="153" y="263" width="14" height="14" transform="rotate(45 160 270)" class="base"/>
+  <!-- Home plate -->
+  <polygon points="250,385 244,378 244,372 256,372 256,378" fill="#fff" stroke="#ccc" stroke-width="1"/>
+
+  <!-- Pitcher's mound -->
+  <circle cx="250" cy="280" r="8" fill="#c4956a" stroke="#b3845a" stroke-width="1"/>
+  <rect x="245" y="278" width="10" height="4" fill="#fff" rx="1"/>
+
+  <!-- Position labels -->
+  <!-- 1 - Pitcher -->
+  <circle cx="250" cy="305" r="16" class="label-circle"/>
+  <text x="250" y="305" class="label-text">1</text>
+  <text x="250" y="328" class="pos-text">Pitcher</text>
+
+  <!-- 2 - Catcher -->
+  <circle cx="250" cy="430" r="16" class="label-circle"/>
+  <text x="250" y="430" class="label-text">2</text>
+  <text x="250" y="453" class="pos-text">Catcher</text>
+
+  <!-- 3 - First Base -->
+  <circle cx="370" cy="285" r="16" class="label-circle"/>
+  <text x="370" y="285" class="label-text">3</text>
+  <text x="370" y="308" class="pos-text">1st Base</text>
+
+  <!-- 4 - Second Base -->
+  <circle cx="305" cy="195" r="16" class="label-circle"/>
+  <text x="305" y="195" class="label-text">4</text>
+  <text x="305" y="218" class="pos-text">2nd Base</text>
+
+  <!-- 5 - Third Base -->
+  <circle cx="130" cy="285" r="16" class="label-circle"/>
+  <text x="130" y="285" class="label-text">5</text>
+  <text x="130" y="308" class="pos-text">3rd Base</text>
+
+  <!-- 6 - Shortstop -->
+  <circle cx="195" cy="195" r="16" class="label-circle"/>
+  <text x="195" y="195" class="label-text">6</text>
+  <text x="195" y="218" class="pos-text">Shortstop</text>
+
+  <!-- 7 - Left Field -->
+  <circle cx="100" cy="120" r="16" class="label-circle"/>
+  <text x="100" y="120" class="label-text">7</text>
+  <text x="100" y="143" class="pos-text">Left Field</text>
+
+  <!-- 8 - Center Field -->
+  <circle cx="250" cy="70" r="16" class="label-circle"/>
+  <text x="250" y="70" class="label-text">8</text>
+  <text x="250" y="93" class="pos-text">Center Field</text>
+
+  <!-- 9 - Right Field -->
+  <circle cx="400" cy="120" r="16" class="label-circle"/>
+  <text x="400" y="120" class="label-text">9</text>
+  <text x="400" y="143" class="pos-text">Right Field</text>
+</svg>

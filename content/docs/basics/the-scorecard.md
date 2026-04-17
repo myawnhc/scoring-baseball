@@ -40,7 +40,7 @@ Most scorecard cells contain a small diamond — a square rotated 45 degrees —
 
 You trace the batter's path around the bases by drawing lines along the edges of this diamond. A single: line from home to first. A home run: all four lines, completing the diamond, often filled in or circled.
 
-<!-- TODO: Diagram showing a mini diamond with a home run traced -->
+![Mini diamond examples — single, double, home run (filled), and caught stealing](/images/diagrams/mini-diamond-segments.svg)
 
 ### The Outcome Notation
 

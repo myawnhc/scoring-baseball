@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <style>
+      .field { fill: #4a8c3f; }
+      .dirt { fill: #c4956a; }
+      .grass-infield { fill: #5a9c4f; }
+      .line { stroke: #fff; stroke-width: 1.5; fill: none; stroke-opacity: 0.5; }
+      .base { fill: #fff; stroke: #ccc; stroke-width: 1; }
+      .label-circle { fill: #1a1a1a; }
+      .label-text { fill: #fff; font-size: 16px; font-weight: 700; text-anchor: middle; dominant-baseline: central; }
+      .pos-text { fill: #1a1a1a; font-size: 12px; font-weight: 500; text-anchor: middle; }
+      .arrow-path { stroke: #e63946; stroke-width: 3.5; fill: none; stroke-linecap: round; marker-end: url(#arrowhead); }
+      .step-circle { fill: #e63946; }
+      .step-text { fill: #fff; font-size: 13px; font-weight: 700; text-anchor: middle; dominant-baseline: central; }
+      .caption { font-size: 13px; fill: #333; text-anchor: middle; font-weight: 600; }
+      .subcaption { font-size: 11px; fill: #666; text-anchor: middle; font-style: italic; }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e63946"/>
+    </marker>
+  </defs>
+
+  <!-- Outfield grass -->
+  <path d="M 0,240 Q 0,20 250,0 Q 500,20 500,240 Z" class="field"/>
+
+  <!-- Infield dirt arc -->
+  <path d="M 100,300 Q 100,140 250,110 Q 400,140 400,300 Z" class="dirt"/>
+
+  <!-- Infield grass diamond -->
+  <polygon points="250,130 340,230 250,330 160,230" class="grass-infield"/>
+
+  <!-- Foul lines -->
+  <line x1="250" y1="350" x2="30" y2="40" class="line"/>
+  <line x1="250" y1="350" x2="470" y2="40" class="line"/>
+
+  <!-- Base paths -->
+  <line x1="250" y1="340" x2="340" y2="230" stroke="#fff" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="340" y1="230" x2="250" y2="130" stroke="#fff" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="250" y1="130" x2="160" y2="230" stroke="#fff" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="160" y1="230" x2="250" y2="340" stroke="#fff" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Bases -->
+  <rect x="333" y="223" width="14" height="14" transform="rotate(45 340 230)" class="base"/>
+  <rect x="243" y="123" width="14" height="14" transform="rotate(45 250 130)" class="base"/>
+  <rect x="153" y="223" width="14" height="14" transform="rotate(45 160 230)" class="base"/>
+  <!-- Home plate -->
+  <polygon points="250,345 244,338 244,332 256,332 256,338" fill="#fff" stroke="#ccc" stroke-width="1"/>
+
+  <!-- Pitcher's mound -->
+  <circle cx="250" cy="240" r="7" fill="#c4956a" stroke="#b3845a" stroke-width="1"/>
+
+  <!-- Position labels (only the 3 involved) -->
+  <!-- 6 - Shortstop -->
+  <circle cx="195" cy="160" r="16" class="label-circle"/>
+  <text x="195" y="160" class="label-text">6</text>
+  <text x="195" y="183" class="pos-text">SS</text>
+
+  <!-- 4 - Second Base -->
+  <circle cx="295" cy="155" r="16" class="label-circle"/>
+  <text x="295" y="155" class="label-text">4</text>
+  <text x="295" y="178" class="pos-text">2B</text>
+
+  <!-- 3 - First Base -->
+  <circle cx="370" cy="245" r="16" class="label-circle"/>
+  <text x="370" y="245" class="label-text">3</text>
+  <text x="370" y="268" class="pos-text">1B</text>
+
+  <!-- Arrow 1: Ball hit to SS (6) -->
+  <path d="M 240,310 C 225,270 210,210 200,175" class="arrow-path"/>
+
+  <!-- Arrow 2: SS throws to 2B (4) -->
+  <path d="M 210,155 L 278,152" class="arrow-path"/>
+
+  <!-- Arrow 3: 2B throws to 1B (3) -->
+  <path d="M 308,165 C 330,190 350,215 358,232" class="arrow-path"/>
+
+  <!-- Step numbers -->
+  <circle cx="228" cy="280" r="11" class="step-circle"/>
+  <text x="228" y="280" class="step-text">1</text>
+
+  <circle cx="245" cy="145" r="11" class="step-circle"/>
+  <text x="245" y="145" class="step-text">2</text>
+
+  <circle cx="340" cy="200" r="11" class="step-circle"/>
+  <text x="340" y="200" class="step-text">3</text>
+
+  <!-- Caption -->
+  <text x="250" y="385" class="caption">6-4-3 Double Play</text>
+  <text x="250" y="403" class="subcaption">Shortstop → Second Base → First Base</text>
+</svg>

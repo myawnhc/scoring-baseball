@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 240" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <style>
+      .seg-reached { stroke: #1a2744; stroke-width: 3; fill: none; stroke-linecap: round; }
+      .seg-not-reached { stroke: #1a2744; stroke-width: 1; fill: none; opacity: 0.35; stroke-linecap: round; }
+      .seg-scored-fill { fill: #1a2744; opacity: 0.12; }
+      .base-filled { fill: #1a2744; stroke: none; }
+      .base-empty { fill: none; stroke: #1a2744; stroke-width: 1.2; }
+      .home { fill: none; stroke: #1a2744; stroke-width: 1.2; }
+      .caption { font-size: 13px; fill: #333; text-anchor: middle; font-weight: 500; }
+      .subcaption { font-size: 11px; fill: #888; text-anchor: middle; }
+      .seg-label { font-size: 10px; fill: #1a2744; text-anchor: middle; font-weight: 600; }
+      .cs-line { stroke: #c44; stroke-width: 2.5; fill: none; stroke-linecap: round; }
+      .cs-cross { stroke: #c44; stroke-width: 2; fill: none; stroke-linecap: round; }
+      .annot { font-size: 9px; fill: #1a2744; text-anchor: middle; font-weight: 600; }
+      .annot-cs { font-size: 9px; fill: #c44; text-anchor: middle; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Example 1: Single (reached 1B) -->
+  <g transform="translate(70,20)">
+    <!-- Diamond outline - not reached segments thin -->
+    <line x1="0" y1="80" x2="40" y2="40" class="seg-reached"/>
+    <line x1="40" y1="40" x2="80" y2="0" class="seg-not-reached"/>
+    <line x1="80" y1="0" x2="120" y2="40" class="seg-not-reached"/>
+    <line x1="120" y1="40" x2="160" y2="80" class="seg-not-reached"/>
+    <!-- Bases -->
+    <rect x="36" y="36" width="8" height="8" transform="rotate(45 40 40)" class="base-filled"/>
+    <rect x="76" y="-4" width="8" height="8" transform="rotate(45 80 0)" class="base-empty"/>
+    <rect x="116" y="36" width="8" height="8" transform="rotate(45 120 40)" class="base-empty"/>
+    <polygon points="80,84 76,80 76,76 84,76 84,80" class="home"/>
+    <!-- Caption -->
+    <text x="80" y="115" class="caption">Single</text>
+    <text x="80" y="130" class="subcaption">1B reached</text>
+  </g>
+
+  <!-- Example 2: Double (reached 2B) -->
+  <g transform="translate(230,20)">
+    <line x1="0" y1="80" x2="40" y2="40" class="seg-reached"/>
+    <line x1="40" y1="40" x2="80" y2="0" class="seg-reached"/>
+    <line x1="80" y1="0" x2="120" y2="40" class="seg-not-reached"/>
+    <line x1="120" y1="40" x2="160" y2="80" class="seg-not-reached"/>
+    <rect x="36" y="36" width="8" height="8" transform="rotate(45 40 40)" class="base-empty"/>
+    <rect x="76" y="-4" width="8" height="8" transform="rotate(45 80 0)" class="base-filled"/>
+    <rect x="116" y="36" width="8" height="8" transform="rotate(45 120 40)" class="base-empty"/>
+    <polygon points="80,84 76,80 76,76 84,76 84,80" class="home"/>
+    <text x="80" y="115" class="caption">Double</text>
+    <text x="80" y="130" class="subcaption">2B reached</text>
+  </g>
+
+  <!-- Example 3: Home Run (scored - all segments + fill) -->
+  <g transform="translate(390,20)">
+    <polygon points="0,80 40,40 80,0 120,40 160,80" class="seg-scored-fill"/>
+    <line x1="0" y1="80" x2="40" y2="40" class="seg-reached"/>
+    <line x1="40" y1="40" x2="80" y2="0" class="seg-reached"/>
+    <line x1="80" y1="0" x2="120" y2="40" class="seg-reached"/>
+    <line x1="120" y1="40" x2="160" y2="80" class="seg-reached"/>
+    <rect x="36" y="36" width="8" height="8" transform="rotate(45 40 40)" class="base-empty"/>
+    <rect x="76" y="-4" width="8" height="8" transform="rotate(45 80 0)" class="base-empty"/>
+    <rect x="116" y="36" width="8" height="8" transform="rotate(45 120 40)" class="base-empty"/>
+    <polygon points="80,84 76,80 76,76 84,76 84,80" class="home"/>
+    <text x="80" y="115" class="caption">Home Run</text>
+    <text x="80" y="130" class="subcaption">Scored (filled)</text>
+  </g>
+
+  <!-- Example 4: Caught Stealing 2B -->
+  <g transform="translate(550,20)">
+    <!-- Full thin baseline -->
+    <line x1="0" y1="80" x2="40" y2="40" class="seg-not-reached"/>
+    <line x1="40" y1="40" x2="80" y2="0" class="seg-not-reached"/>
+    <line x1="80" y1="0" x2="120" y2="40" class="seg-not-reached"/>
+    <line x1="120" y1="40" x2="160" y2="80" class="seg-not-reached"/>
+    <!-- Reached 1B -->
+    <line x1="0" y1="80" x2="40" y2="40" class="seg-reached"/>
+    <!-- CS: red half-line from 1B to midpoint of 1B-2B -->
+    <line x1="40" y1="40" x2="60" y2="20" class="cs-line"/>
+    <!-- Red crossbar at midpoint -->
+    <line x1="53" y1="27" x2="67" y2="13" class="cs-cross" transform="rotate(90 60 20)"/>
+    <!-- CS annotation -->
+    <text x="72" y="14" class="annot-cs">CS</text>
+    <!-- Bases -->
+    <rect x="36" y="36" width="8" height="8" transform="rotate(45 40 40)" class="base-empty"/>
+    <rect x="76" y="-4" width="8" height="8" transform="rotate(45 80 0)" class="base-empty"/>
+    <rect x="116" y="36" width="8" height="8" transform="rotate(45 120 40)" class="base-empty"/>
+    <polygon points="80,84 76,80 76,76 84,76 84,80" class="home"/>
+    <text x="80" y="115" class="caption">Caught Stealing</text>
+    <text x="80" y="130" class="subcaption">Red crossbar at midpoint</text>
+  </g>
+
+  <!-- Segment labels at bottom -->
+  <g transform="translate(0,160)">
+    <text x="350" y="30" font-size="11" fill="#666" text-anchor="middle" font-style="italic">Heavy line = reached that base. Thin line = didn't reach. Filled interior = scored a run.</text>
+    <text x="350" y="48" font-size="11" fill="#666" text-anchor="middle" font-style="italic">Filled base square = runner's current position. Red crossbar = runner thrown out.</text>
+  </g>
+</svg>
