@@ -191,7 +191,7 @@ In BaseballScorer, fielder numbers appear on the diamond during fielding sequenc
 | Color | Used for |
 |---|---|
 | Green | Hits, walks, errors, FC, stolen bases, safe outcomes |
-| Red | Strikeouts (K and backwards K), caught stealing |
+| Red | Strikeouts (K and backwards K), out circles, runner-out indicators (CS, pickoff, force out) |
 | Orange | Called strikes, fouls, unknown (`?`) |
 | Purple | HBP |
 | Blue | In play, auto-filled plays, MLB sync |

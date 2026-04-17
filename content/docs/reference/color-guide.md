@@ -23,7 +23,7 @@ Once you internalize this, the colors stop being labels and start being informat
 | Color | Meaning | Where you see it |
 |---|---|---|
 | **Green** | Batter reached base safely; positive outcome | Hits (1B, 2B, 3B, HR), walks (BB, IBB), errors (E), fielder's choice (FC), stolen bases, safe advancement |
-| **Red** | Strikeout; caught stealing | Strikeouts (K, backwards K), caught stealing (CS), out circles |
+| **Red** | Strikeout; out indicator; runner failed to advance | Strikeout text (K, backwards K), out circles (numbered), runner-out basepath indicators (CS, pickoff, force out) |
 | **Orange** | Called strikes, fouls, warnings, errors in the fielding sense, unknown | Called strike dots, foul ball dots, the `?` unknown notation, fielding errors during a sequence |
 | **Yellow** | Foul balls specifically | Foul pitch dots (in some display contexts) |
 | **Purple** | Hit by pitch; edit mode; review border | HBP notation, the edit-mode indicator on a card, review/flagged cards |
