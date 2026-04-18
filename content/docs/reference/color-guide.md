@@ -47,7 +47,7 @@ When you record a pitch sequence, each pitch becomes a small dot on the at-bat c
 
 A full count with a walk looks like: red, green, orange, green, green — three balls, two strikes (well, however the count built). The final green dot is the fourth ball. You can read the at-bat story just from the dots.
 
-<!-- TODO: Screenshot of pitch dots on an at-bat card, showing multiple colors -->
+![At-bat card showing colored pitch dots — green for balls, orange for called strikes, red for swinging strikes](/images/screenshots/pitch-dots.jpg)
 
 ## Card Background Colors
 

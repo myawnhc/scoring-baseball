@@ -22,7 +22,7 @@ Walk-offs can happen on a hit, a walk with the bases loaded, a sacrifice fly, a 
 
 On the scorecard, the walk-off at-bat is the last entry. If the winning run scores mid-play, subsequent baserunner movement doesn't matter — the game is over.
 
-<!-- TODO: Screenshot of the walk-off screen with fireworks icon and "Walk-Off!" heading -->
+![Walk-Off screen with fireworks icon — St. Louis Cardinals wins 6–5 in extras with ghost runner](/images/screenshots/walk-off-ghost.jpg)
 
 ## Extra Innings
 

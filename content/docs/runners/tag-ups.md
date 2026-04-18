@@ -44,7 +44,7 @@ The scorer tracks each runner's decision independently. On a fly ball with runne
 
 After you record a [fly out]({{< relref "/docs/at-bats/fly-outs" >}}), BaseballScorer checks whether there are runners on base and, if so, prompts you for each runner's decision: did they tag up and advance, or did they hold?
 
-<!-- TODO: Screenshot of tag-up advancement prompt appearing after recording a fly out -->
+![Runner placement prompt — tap the base where the runner ended up, or mark them out](/images/screenshots/runner-placement.jpg)
 
 You work through each runner individually. For runners who advanced, the base path updates to show the movement. If the runner scored, the run is added to the inning total. If the runner was thrown out trying to advance, you can record that out as well — it increments the out count and ends the at-bat entry.
 

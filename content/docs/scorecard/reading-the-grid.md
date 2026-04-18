@@ -88,7 +88,7 @@ The header row (inning numbers), player rows, and totals row are all part of a *
 
 Each cell contains a miniature version of all the same elements: mini diamond, fielding notation, pitch dots, and out/RBI markers. Overlays like pitching change lines (horizontal), substitution lines (vertical), inning-end diagonal slashes, and ghost runner cells provide additional context directly on the grid.
 
-<!-- TODO: Screenshot of a tapped cell showing the detail popup sheet -->
+![At-Bat Detail popup showing player stats, pitch sequence, RBI, and baserunning events](/images/screenshots/scorecard-cell-detail.jpg)
 
 The scorecard is a read-only view — you score from the portrait view, then review in landscape. But because every at-bat is stored as structured data, the grid always reflects the current game state accurately.
 

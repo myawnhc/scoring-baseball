@@ -55,7 +55,7 @@ This is worth recording accurately, because the defensive lineup determines who'
 
 Traditional scorecards show substitutions through vertical lines and cramped handwriting. Digitally, there's room to be clearer. The vertical line convention persists as a structural marker, but annotations can be much more readable.
 
-<!-- TODO: Screenshot of substitution line with banner text in inning summary -->
+![Inning summary column showing at-bat cards with a pitching change banner](/images/screenshots/inning-summary.jpg)
 
 ## In BaseballScorer
 
@@ -75,7 +75,7 @@ BaseballScorer handles each substitution type through a dedicated flow, so you'r
 
 **Substitution banners in the inning summary:** Every substitution produces a banner in the inning summary column. Pinch hitter banners (teal) read something like "Rodriguez pinch hits for Williams." These banners make it easy to reconstruct what happened and when — which is exactly what a scorecard is for.
 
-<!-- TODO: Screenshot of inning summary column showing teal PH banner -->
+![Inning summary showing substitution banners between at-bat cards](/images/screenshots/inning-summary.jpg)
 
 Substitutions are one of the more intricate parts of scoring because they have ripple effects: lineup order, defensive assignments, eligibility rules. Get in the habit of noting them immediately when they happen, and resolve defensive assignments before the next inning begins. Future-you, re-reading the scorecard two innings later, will be grateful.
 

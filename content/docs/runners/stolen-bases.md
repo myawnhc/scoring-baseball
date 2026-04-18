@@ -24,7 +24,7 @@ A few nuances worth knowing:
 
 On a paper scorecard, a stolen base is typically noted at the base path segment where the runner advanced. The most common notation is **SB** written at the midpoint of the segment from the starting base to the stolen base, often with an arrow indicating direction.
 
-<!-- TODO: Screenshot of mini diamond showing SB annotation at base path segment -->
+![Mini diamond showing SB annotation on the first-to-second base path](/images/screenshots/stolen-base-annotation.jpg)
 
 On the mini diamond in the at-bat box, the path from base to base is divided into segments. The SB label appears at the midpoint of the segment that was stolen — so for a steal of second, it appears on the segment between first and second base.
 
@@ -54,7 +54,7 @@ Wild pitches and passed balls that allow runners to advance are handled differen
 
 Stolen bases are recorded through the **Runner Action Sheet** — an overlay that appears when you tap an occupied base on the diamond.
 
-<!-- TODO: Screenshot of runner action sheet with Stolen Base option highlighted -->
+![Runner Action Sheet showing Stolen Base, Caught Stealing, and Picked Off options](/images/screenshots/runner-action-sheet.jpg)
 
 Tap the filled base indicator for the runner you want to act on. The action sheet presents several options:
 
@@ -68,6 +68,6 @@ Tap the filled base indicator for the runner you want to act on. The action shee
 
 After selecting Stolen Base, the mini diamond updates to show the SB annotation at the appropriate segment midpoint. If you select Caught Stealing, the runner is removed from the bases and the out total increases.
 
-<!-- TODO: Screenshot of mini diamond after stolen base annotation -->
+![At-bat card with SB annotation on the mini diamond after a stolen base](/images/screenshots/stolen-base-annotation.jpg)
 
 The action sheet can be accessed at any point during an active at-bat — before, after, or between pitches. Stolen bases happen independently of the pitch sequence, and BaseballScorer lets you record them whenever they occur in the game without disrupting the pitch tracking flow.

@@ -24,7 +24,7 @@ Each team gets its own page, so a complete game printout is two pages.
 
 The printed scorecard includes all the same overlays you see on screen: pitching change lines, substitution lines, inning-end diagonal slashes, and ghost runner cell markers. What you see in landscape view is what you get on paper.
 
-<!-- TODO: Screenshot of a completed print preview showing header, grid body, and footer -->
+![Print preview showing two landscape pages with scorecard grid, pitcher line, and box score](/images/screenshots/print-preview.jpg)
 
 If any at-bats have notes attached, those are collected in a **footnotes section** at the bottom of each page, referenced by cell position. This keeps the grid clean while preserving annotations.
 

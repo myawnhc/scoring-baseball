@@ -19,7 +19,7 @@ Practice mode loads a real MLB game from bundled data — actual plays, actual s
 - The batter and pitcher matchup
 - Where you are in the game — a counter like "3 / 15" tells you this is the 3rd play out of 15 total
 
-<!-- TODO: Screenshot of the practice play card showing inning, matchup, and play counter -->
+![Practice mode showing pitch sequence prompts, batter card, and matchup info](/images/screenshots/practice-mode.jpg)
 
 ## Progressive Reveal
 

@@ -77,7 +77,7 @@ BaseballScorer defaults to full pitch-by-pitch tracking. Six buttons appear at t
 - **HBP** (purple) — records hit by pitch and ends the at-bat
 - **In Play** (blue) — signals the ball was put in play; opens the outcome entry flow
 
-<!-- TODO: Screenshot of pitch input buttons row in BaseballScorer -->
+![Pitch input buttons — Ball, Called, Swinging, Foul, HBP, In Play, plus WP/PB/Balk](/images/screenshots/pitch-input-buttons.jpg)
 
 **Auto-conclusions** handle the counting for you:
 

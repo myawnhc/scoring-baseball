@@ -55,7 +55,7 @@ Baserunning events that happen after the batter reaches base are annotated at th
 
 These annotations appear along the line segment, positioned near the midpoint of the base path where the event happened.
 
-<!-- TODO: Screenshot showing mini diamond with SB annotation on the first-to-second segment -->
+![Mini diamond with SB annotation on the first-to-second segment](/images/screenshots/stolen-base-annotation.jpg)
 
 For full details on stolen base notation, see [Stolen Bases]({{< relref "/docs/runners/stolen-bases" >}}). For wild pitch and passed ball advances, see [Wild Pitches and Passed Balls]({{< relref "/docs/runners/wild-pitches" >}}).
 

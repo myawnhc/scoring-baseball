@@ -53,7 +53,7 @@ The app records the exact point of the change: the inning, the out count, the ba
 
 A **pitching change banner** appears in the inning summary column in red, reading something like "Pitching Change: Smith replaces Jones." This makes it easy to see at a glance when each pitcher entered and exited.
 
-<!-- TODO: Screenshot of inning summary with red pitching change banner -->
+![Inning summary with red pitching change banner reading "Pitching Change: Brazob&aacute;n replaces Senga"](/images/screenshots/inning-summary.jpg)
 
 On the scorecard grid, a **horizontal line** is drawn across the column at the point of the change — consistent with the traditional paper convention. The new pitcher's name appears below the line.
 

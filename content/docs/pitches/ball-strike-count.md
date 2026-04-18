@@ -57,7 +57,7 @@ The one edge case worth knowing: if a pitcher is replaced mid-at-bat, the new pi
 
 BaseballScorer displays the current count in "balls-strikes" format — for example, **2-1** — prominently in the active at-bat card. The count updates automatically after each pitch button tap.
 
-<!-- TODO: Screenshot of ball-strike count display in active at-bat card -->
+![At-bat card showing pitch dots and count display](/images/screenshots/pitch-dots.jpg)
 
 Auto-conclusions handle the endpoints:
 

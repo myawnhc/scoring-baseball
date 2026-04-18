@@ -58,7 +58,7 @@ Fastpitch softball uses 7 innings, a different pitching motion, and often an int
 
 Slowpitch uses 7 innings with different scoring dynamics — more hits, more runs, different defensive alignments. Lineup sizes may be larger (10 fielders in some formats). This preset handles recreational and competitive slowpitch leagues.
 
-<!-- TODO: Screenshot of the ruleset selection screen during game setup -->
+![New League screen showing ruleset options — innings, lineup size, DH, ghost runner](/images/screenshots/rulesets.jpg)
 
 ## Custom Rulesets
 

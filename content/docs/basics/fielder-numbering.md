@@ -12,7 +12,7 @@ Every position on the baseball field has a number. These numbers are the backbon
 
 Here's the standard numbering, starting from the pitcher and working outward:
 
-![Baseball fielder position numbers — each position labeled 1 through 9 on the field](/images/diagrams/fielder-positions.svg)
+![Baseball fielder position numbers on the diamond — 1 (pitcher) through 9 (right field), shown during a 6-3 ground out](/images/screenshots/fielding-positions.jpg)
 
 | Number | Position | Abbreviation |
 |--------|----------|-------------|

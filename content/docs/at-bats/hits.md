@@ -48,7 +48,7 @@ The key: if the batter reaches base on a bunt with no error involved, it's a hit
 
 Hits are green. On a paper scorecard this might be implicit (reaching base is generally good), but in digital scoring apps like BaseballScorer, the cell background or the diamond trace turns green for any outcome where the batter reached base safely. Green means safe; red means out. You'll internalize this quickly.
 
-<!-- TODO: Screenshot of BaseballScorer showing green cells for a hit -->
+![At-bat card with green background indicating the batter reached base on a hit](/images/screenshots/pitch-dots.jpg)
 
 ## Runner Placement After Hits
 

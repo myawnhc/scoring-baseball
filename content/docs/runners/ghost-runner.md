@@ -32,7 +32,7 @@ If the ghost runner scores, the run is credited to the pitcher who was pitching 
 
 When an extra inning begins, BaseballScorer automatically places the ghost runner on second base. The runner appears on the diamond with a **dashed border** instead of a solid fill, and a **"GHOST"** label to distinguish it from runners who reached base conventionally.
 
-<!-- TODO: Screenshot of diamond view showing ghost runner on 2nd with dashed border and GHOST label -->
+![Scoring view in extra innings showing GHOST label on Church at second base, walk-off celebration](/images/screenshots/walk-off-ghost.jpg)
 
 The portion of the diamond path from home plate to second base — the path the ghost runner never actually ran — is shown with a **dotted line** rather than a solid one. When the ghost runner advances or scores, the paths from that point forward are drawn normally.
 

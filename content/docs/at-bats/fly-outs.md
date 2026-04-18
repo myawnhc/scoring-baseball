@@ -25,7 +25,7 @@ Examples:
 - **FF2** — foul pop-up caught by the catcher
 - **F5** — pop-up caught by the third baseman
 
-![Baseball fielder position numbers — each position labeled 1 through 9 on the field](/images/diagrams/fielder-positions.svg)
+![Baseball fielder position numbers on the diamond — 1 (pitcher) through 9 (right field)](/images/screenshots/fielding-positions.jpg)
 
 The fielder number is always the person who made the *catch*. If a center fielder drifts to right-center and catches a ball that the right fielder was also running toward, it's still F8 because 8 (center field) made the play.
 
@@ -54,7 +54,7 @@ Key rules for a sacrifice fly:
 
 The sacrifice fly is the "nice try" of baseball statistics — the batter made an out, but they did something productive, and the rules recognize that.
 
-<!-- TODO: Screenshot of BaseballScorer showing a sacrifice fly prompt -->
+![Sacrifice fly tag-up prompt — Schwarber tags up, Home or stay?](/images/screenshots/sac-fly-prompt.jpg)
 
 ## Tag-Up Situations
 

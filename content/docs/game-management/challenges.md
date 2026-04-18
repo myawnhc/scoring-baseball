@@ -39,14 +39,14 @@ After recording a pitch or play, a **Challenge button** appears. Tap it to trigg
 - **Upheld** — the original call stands. The team loses their challenge.
 - **Cancel** — you tapped the button by accident; nothing changes.
 
-<!-- TODO: Screenshot of the challenge alert with the three options -->
+![Challenge Result dialog with Overturned, Upheld, and Cancel options](/images/screenshots/challenge-dialog.jpg)
 
 **Visual notation in the pitch sequence:** Challenges leave a distinct visual mark in the pitch dot display.
 
 - An **upheld** challenge shows the original pitch dot with a ring around it — the dot is unchanged but visually flagged as reviewed.
 - An **overturned** challenge shows the original (hollow) dot alongside the corrected (filled) dot in a connected capsule — you can see both what was called and what it became.
 
-<!-- TODO: Screenshot of pitch dot row showing upheld (dot with ring) and overturned (capsule with hollow + filled dot) -->
+![At-bat card showing overturned challenge — pitch dots include the challenge capsule notation](/images/screenshots/challenge-overturned.jpg)
 
 **Challenge status bar:** A persistent indicator shows how many challenges each team has remaining. In a standard MLB game, that starts at one per team and goes to zero after an upheld challenge. The status bar updates automatically when a challenge is resolved.
 

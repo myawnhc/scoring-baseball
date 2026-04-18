@@ -59,7 +59,7 @@ This is important for accuracy. If a WP moves the runner from first to second bu
 
 When there are runners on base, three additional buttons appear in the active at-bat controls: **WP**, **PB**, and **Balk**.
 
-<!-- TODO: Screenshot of WP/PB/Balk buttons in the pitch controls area with a runner on base -->
+![Pitch input buttons showing WP, PB, and Balk options when runners are on base](/images/screenshots/pitch-input-buttons.jpg)
 
 Tapping **WP** or **PB** opens a per-runner prompt: for each runner currently on base, you're asked whether that runner advanced. This lets you accurately record partial advancements — runner on first advances, runner on third stays — without having to manually edit each base.
 
