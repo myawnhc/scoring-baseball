@@ -24,7 +24,7 @@ This is called a [sacrifice fly]({{< relref "/docs/at-bats/sacrifices" >}}). The
 
 The scorer's job is to record both things: the out on the batter (fly to 8 — center field, for example) and the run scoring on the tag (the runner's path completes from third to home, marked as scoring on the tag-up).
 
-<!-- TODO: Screenshot of mini diamond showing completed path from 3rd to home via tag-up notation -->
+![Tag-up decision dialog — advance the runner or hold](/images/screenshots/tag-up-dialog.jpg)
 
 ## Tag-Up Outs
 
@@ -50,4 +50,4 @@ You work through each runner individually. For runners who advanced, the base pa
 
 The sacrifice fly credit is handled automatically: if the runner on third tags and scores, and the batter is out on the fly, BaseballScorer credits the batter with an RBI and excludes the plate appearance from the batting average calculation.
 
-<!-- TODO: Screenshot of completed at-bat with sac fly notation and runner scoring from third -->
+![Completed sac fly — Turner's SF9 with RBI dot, and Schwarber's preceding triple](/images/screenshots/sf-at-bats.jpg)

@@ -91,7 +91,11 @@ In BaseballScorer, the mini diamond is **canvas-drawn** — rendered as vector g
 - The `.dimmed` style is used for inactive or historical display contexts
 - The `.monochrome` style appears in print output and accessibility contexts
 
-<!-- TODO: Screenshot comparing fullColor, dimmed, and monochrome diamond styles -->
+![Full-color diamond in the inning summary card showing a single with base paths to 2B and LF](/images/screenshots/diamond-style-inning-summary.jpg)
+
+![Dimmed diamond in the previous at-bat strip](/images/screenshots/diamond-style-prev-atbat.jpg)
+
+![Monochrome diamond in the scorecard grid cell](/images/screenshots/diamond-style-scorecard.jpg)
 
 At the large scoring size, the diamond is **tappable**: tap a base to toggle a runner's presence, and tap a fielder number overlay to assign fielding sequences. This makes the diamond an interactive field diagram, not just a display element.
 

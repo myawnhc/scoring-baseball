@@ -24,7 +24,7 @@ What it does *not* fill in:
 
 Auto-fill gives you the what without the how. The outcome is there; the story of the at-bat — the full count, the pitcher painting the corner on strike three — that part is still yours to record.
 
-<!-- TODO: Screenshot of an auto-filled at-bat card showing the blue arrow indicator -->
+![Scoring view showing auto-filled at-bat with blue arrow indicator and Rewind/Next play/All toolbar](/images/screenshots/auto-fill-scoring.png)
 
 ## How Matching Works
 
@@ -44,19 +44,21 @@ Why does this matter? A few reasons:
 
 When an at-bat has been scored manually and then confirmed against the feed through reconciliation, the icon changes from a blue arrow to a **blue sync icon**. See [Scoring Along with Live MLB Games]({{< relref "mlb-integration" >}}) for how reconciliation works.
 
-<!-- TODO: Screenshot comparing blue arrow (auto-filled) vs blue sync (reconciled) icons -->
+![Batter card with blue sync icon indicating manually scored and reconciled against MLB feed](/images/screenshots/mlb-sync-icon.jpg)
 
 ## When to Use Auto-Fill
 
 **You fell behind during the game.** This is the most common use case. You were scoring along, got pulled into conversation during the third inning, and now you're two batters behind. Tap **Next Play** once or twice to catch up, then continue scoring manually.
 
-**You missed an entire half-inning.** Tap **Catch Me Up** to pull in everything from where your scoring left off to the current moment. Review the auto-filled cards, add any detail you want, and keep going.
+**You missed an entire half-inning.** Tap **All** on the catch-up banner to pull in everything from the live feed at once. Review the auto-filled cards, add any detail you want, and keep going.
 
-**You're starting a game already in progress.** You didn't catch the first inning on TV, but you want to score the rest of the game. Tap **Catch Me Up** or **All** to fill in what you missed, then start scoring manually from where the feed ends.
+**You're starting a game already in progress.** You didn't catch the first inning on TV, but you want to score the rest of the game. Tap **All** to fill in what you missed, then start scoring manually from where the feed ends.
+
+**You skipped ahead and have gaps.** Tap **Fill Gaps** to backfill all missing (?) plays from the MLB feed without touching anything you've already scored.
 
 **You want a complete record of a finished game.** Open a completed game and tap **All**. You'll have a full scorecard in seconds, ready to review or annotate.
 
-<!-- TODO: Screenshot of the Next Play / Catch Me Up / All buttons -->
+![Game Details screen with Catch me up and Score this game buttons](/images/screenshots/catch-me-up.png)
 
 ## Auto-Fill vs. Manual Scoring
 

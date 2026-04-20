@@ -14,7 +14,7 @@ Write **FC** followed by the fielding sequence:
 - **FC 5-4** — third baseman threw to second; batter safe at first
 - **FC 1-6** — pitcher fielded it, threw to shortstop covering second
 
-<!-- TODO: Screenshot of BaseballScorer showing FC in the scorecard cell -->
+![Fielder's choice — tapping fielders to build the sequence](/images/screenshots/fc-fielder-selection.jpg)
 
 ## What Qualifies as a Fielder's Choice
 
@@ -49,4 +49,8 @@ Tap **FC** (Fielder's Choice) in the outcome grid. BaseballScorer then asks you 
 
 After the sequence is entered, BaseballScorer resolves the runners. The lead runner who was retired is marked out (you confirm this in the runner resolution screen). The batter is placed at first base with an FC notation.
 
+![Runner resolution showing the lead runner thrown out](/images/screenshots/fc-runner-out.jpg)
+
 The at-bat closes with the batter at first, green cell, **FC** notation with the fielding sequence. The retired runner shows an out marker in their original cell.
+
+![Completed FC at-bat — batter safe at first with FC notation](/images/screenshots/fc-batter-safe.jpg)

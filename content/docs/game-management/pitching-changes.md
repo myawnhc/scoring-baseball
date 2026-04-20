@@ -18,7 +18,7 @@ The timing matters for scoring because inherited runners — runners already on 
 
 The traditional convention is a **horizontal line** drawn across the pitcher's column (or the cell where the change occurs) at the moment the new pitcher enters. Write the new pitcher's name, their jersey number, and the inning they entered. Some scorekeepers use the bottom margin of the scoring grid to track the pitching staff separately from the batting lineup.
 
-<!-- TODO: Screenshot of scorecard cell showing horizontal pitching change line with new pitcher name -->
+![Scorecard cell with horizontal line marking a pitching change, new pitcher name below](/images/screenshots/horizontal-sub-line.jpg)
 
 If a pitching change happens mid-at-bat — which is legal and happens fairly often — note which pitcher was responsible for the count when the new pitcher inherited the batter. The outcome of that at-bat is charged to whichever pitcher threw the decisive pitch (the one that determined the result).
 
@@ -37,7 +37,7 @@ A complete pitcher's line tells the story of how each arm performed. A starter w
 
 Tracking earned vs. unearned runs requires knowing which runs would not have scored without an error — which can get complicated. For casual scoring, tracking total runs per pitcher is fine. The distinction between earned and unearned matters more for formal stat-keeping.
 
-<!-- TODO: Screenshot of pitcher's line table or summary view -->
+![Pitcher's line showing IP, H, R, BB, K, HR, and pitch count for each pitcher](/images/screenshots/pitching-line.jpg)
 
 ## In BaseballScorer
 
@@ -47,13 +47,13 @@ Making a pitching change in BaseballScorer takes two taps.
 
 **From the diamond:** Tap the pitcher's mound area on the diamond display. This opens the same bullpen picker — a handy shortcut if you're thinking spatially about what's happening on the field.
 
-<!-- TODO: Screenshot of the bullpen picker showing available relievers -->
+![Select Pitcher dialog showing available bullpen arms with jersey numbers](/images/screenshots/bullpen-picker.png)
 
 The app records the exact point of the change: the inning, the out count, the base state. If the change happens mid-at-bat, the app tracks which pitcher inherited the count.
 
 A **pitching change banner** appears in the inning summary column in red, reading something like "Pitching Change: Smith replaces Jones." This makes it easy to see at a glance when each pitcher entered and exited.
 
-![Inning summary with red pitching change banner reading "Pitching Change: Brazob&aacute;n replaces Senga"](/images/screenshots/inning-summary.jpg)
+![Scoring view showing pitching change banner "Pitching Change: Pfaadt replaces Hoffmann" in the inning summary](/images/screenshots/pitching-change-banner.png)
 
 On the scorecard grid, a **horizontal line** is drawn across the column at the point of the change — consistent with the traditional paper convention. The new pitcher's name appears below the line.
 

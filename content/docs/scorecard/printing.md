@@ -34,7 +34,7 @@ Tap the **print button** in the scorecard toolbar (visible in landscape orientat
 
 AirPrint-compatible printers work directly from the iPad without any additional setup. If you're printing via a shared printer or a print-to-PDF workflow, iOS handles that through the same panel.
 
-<!-- TODO: Screenshot of the scorecard toolbar with the print button highlighted -->
+![Scorecard landscape view with toolbar showing print, share, and refresh buttons](/images/screenshots/scorecard-toolbar.png)
 
 ## Tips
 

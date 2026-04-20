@@ -26,7 +26,9 @@ The ghost runner's at-bat box for that inning gets special treatment: it's eithe
 
 If the ghost runner scores, the run is credited to the pitcher who was pitching when the ghost runner was "placed" — even though the ghost runner never actually faced that pitcher. This is a quirky wrinkle in how earned runs are assessed in extra innings.
 
-<!-- TODO: Screenshot of scorecard showing ghost runner starting position at 2nd base with dashed or annotated path -->
+![Ghost runner card in the inning summary showing dashed diamond with Church placed at second base](/images/screenshots/ghost-runner-inning-summary.jpg)
+
+![Scorecard cell showing ghost runner notation with dashed diamond at second base](/images/screenshots/ghost-runner-scorecard.jpg)
 
 ## In BaseballScorer
 

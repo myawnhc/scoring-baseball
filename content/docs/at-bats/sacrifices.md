@@ -18,7 +18,7 @@ Examples:
 - **SAC 1-3** — batter bunts to the pitcher, who throws to first
 - **SAC 5-3** — third baseman fields the bunt, throws to first
 
-![Scorecard cell showing SF9 sacrifice fly with RBI dot](/images/screenshots/sac-fly-cell.jpg)
+![Completed sac fly — Turner's SF9 with RBI dot, and the preceding triple](/images/screenshots/sf-at-bats.jpg)
 
 ### When It Counts as a Sacrifice
 
@@ -51,7 +51,7 @@ Unlike the sacrifice bunt, the defense has a choice on a sacrifice fly — they 
 
 Same protection as the sacrifice bunt — the SF doesn't count as an at-bat. The plate appearance counts; the at-bat doesn't.
 
-![Sacrifice fly tag-up prompt — Schwarber tags up, Home or stay?](/images/screenshots/sac-fly-prompt.jpg)
+![Sacrifice fly tag-up prompt — Schwarber tags up, Home or stay?](/images/screenshots/sf-tag-up.jpg)
 
 ## In BaseballScorer
 

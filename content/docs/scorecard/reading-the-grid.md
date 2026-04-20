@@ -50,7 +50,7 @@ A lineup has nine batters. In a long inning, the batting order can turn over —
 
 Some scorecards handle this by leaving space for extra at-bats in each column. Others use a separate column for "second time through." Either way, the principle is the same: follow the order, and mark each at-bat as it happens.
 
-<!-- TODO: Screenshot showing a lineup wraparound scenario with a second at-bat in the same inning -->
+![Scorecard column showing lineup wraparound with nine at-bats and inning totals at the bottom](/images/screenshots/lineup-wraparound.jpg)
 
 ## Substitutions and Lineup Changes
 
@@ -69,7 +69,7 @@ At the bottom of each inning column, you'll typically find a summary row showing
 
 These per-inning totals are what feeds the [Line Score]({{< relref "line-score" >}}) — the big-picture summary across the top or bottom of the scorecard.
 
-<!-- TODO: Screenshot of the inning totals row at the bottom of the grid -->
+The lineup wraparound screenshot above also shows the inning totals row at the bottom — R, H, E, and LOB for that half-inning.
 
 ## In BaseballScorer
 

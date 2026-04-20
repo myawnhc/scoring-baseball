@@ -67,7 +67,7 @@ Here's the flow:
 
 The app builds the notation automatically: tap 6, tap 3, and you'll see "6-3" appear in the batter's completed at-bat card.
 
-<!-- TODO: Screenshot sequence showing the flow -->
+![Ground out 5-3 fielding sequence — fielder numbers highlighted on the diamond with GO notation](/images/screenshots/ground-out-sequence.png)
 
 For a simple ground out with no runners on base, the whole thing takes about two seconds — tap GO, tap two fielders, done.
 

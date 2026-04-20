@@ -18,7 +18,7 @@ On a traditional scorecard, you mark a pinch hitter by drawing a **vertical line
 
 The at-bat result goes in the pinch hitter's row. Whatever happened — hit, walk, strikeout — belongs to them, not the original batter.
 
-<!-- TODO: Screenshot of scorecard showing PH vertical line with new batter written below -->
+![Scorecard showing vertical substitution line with pinch hitter Vientos replacing Baty](/images/screenshots/vertical-sub-line.jpg)
 
 After the half-inning ends, there's a follow-up question: where does the pinch hitter play on defense? They might stay in the game at the original player's position, move to a different spot, or leave — in which case yet another player takes the field. This "defensive assignment" step is easy to forget in the flow of the game, so pay attention after any pinch hit.
 
@@ -63,6 +63,8 @@ BaseballScorer handles each substitution type through a dedicated flow, so you'r
 
 **Pinch Hitter:** Tap the batter's card during an at-bat. A bench player picker appears — select the pinch hitter and choose the reason (PH, ejected, or injury). The app closes out the original batter's appearance and opens a new one for the pinch hitter. The lineup slot updates automatically.
 
+![Pinch hitter dialog — select the replacement and reason](/images/screenshots/ph-dialog.jpg)
+
 **Pinch Runner:** Tap the occupied base on the diamond. The Runner Action Sheet appears — choose "Pinch Runner" and pick the replacement from your bench. The app transfers the runner's position to the new player.
 
 **Pitching Change:** Covered in detail on the [pitching changes]({{< relref "pitching-changes" >}}) page.
@@ -71,11 +73,11 @@ BaseballScorer handles each substitution type through a dedicated flow, so you'r
 
 **Post-inning resolution:** After a pinch hit or pinch run, BaseballScorer presents a resolution sheet before the next half-inning begins. It asks where the substitute plays on defense — Stay In, Different Position, Leave Game, or Decide Later. This ensures the defensive lineup stays accurate without requiring you to remember mid-game.
 
-<!-- TODO: Screenshot of the defensive resolution sheet with the four options -->
+![Post-inning defensive resolution — where does the pinch hitter play?](/images/screenshots/ph-defense-resolution.jpg)
 
 **Substitution banners in the inning summary:** Every substitution produces a banner in the inning summary column. Pinch hitter banners (teal) read something like "Rodriguez pinch hits for Williams." These banners make it easy to reconstruct what happened and when — which is exactly what a scorecard is for.
 
-![Inning summary showing substitution banners between at-bat cards](/images/screenshots/inning-summary.jpg)
+![Pinch hitter banner in the inning summary column](/images/screenshots/ph-banner.jpg)
 
 Substitutions are one of the more intricate parts of scoring because they have ripple effects: lineup order, defensive assignments, eligibility rules. Get in the habit of noting them immediately when they happen, and resolve defensive assignments before the next inning begins. Future-you, re-reading the scorecard two innings later, will be grateful.
 
