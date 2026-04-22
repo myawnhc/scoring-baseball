@@ -16,6 +16,10 @@ On the mini diamond, draw a line from home plate to first base — the same as a
 
 Color coding: **green**. The batter reached base safely, just like a hit.
 
+Here's a walk on a hand-scored card — the diamond path traced from home to first, with the batter later scoring (the completed diamond):
+
+![Hand-scored walk cell showing the batter reaching first and later scoring — scorecard by Steven Harrison](/images/hand-scored/steven-harrison-walk.jpg)
+
 ## IBB — Intentional Walk
 
 When the defense wants to put the batter on base deliberately — typically to set up a force play or avoid pitching to a dangerous hitter — they issue an intentional walk. Write **IBB**.

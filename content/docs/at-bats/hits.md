@@ -36,6 +36,10 @@ The batter circles all the bases and scores. Write **HR**. All four lines of the
 
 **Inside-the-park home runs** are scored identically (**HR**). The distinction is colorful but statistically it doesn't matter — the batter touched all four bases.
 
+Here's a home run on a hand-scored card — the diamond completely filled in with blue, making it jump off the page. Most scorekeepers fill or shade the diamond to mark a run scored, and a home run gets the full treatment:
+
+![Hand-scored home run cell with filled diamond and HR notation in blue — scorecard by Steven Harrison](/images/hand-scored/steven-harrison-home-run.jpg)
+
 ![Mini diamond examples — single, double, home run (filled), and caught stealing](/images/diagrams/mini-diamond-segments.svg)
 
 ## Bunt Singles

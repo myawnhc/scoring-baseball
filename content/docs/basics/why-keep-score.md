@@ -32,6 +32,10 @@ And then there are the truly rare moments. On April 29, 2007, Troy Tulowitzki tu
 
 ![Hand-scored card from ATL at COL on April 29, 2007, capturing Troy Tulowitzki's unassisted triple play — one of the rarest plays in baseball history](/images/hand-scored/rick-moreno-unassisted-triple-play.jpg)
 
+Look closely at the Colorado half and you can see it — three cells in a row, each marked "TP" for triple play, recording the moment Tulowitzki caught a line drive, stepped on second, and tagged the runner coming from first. Three outs, one player, one motion. The notation is almost anticlimactic for something so rare.
+
+![Cropped cells from the unassisted triple play — three consecutive TP entries recording all three outs on a single play](/images/hand-scored/rick-moreno-unassisted-tp-crop.jpg)
+
 Scorekeeping is alive at every level. This card from a 2025 minor league game between the Algoa River Dragons and the Jackson Rockabillys captures a grand slam (noted in the margin) and uses color coding — red for outs, blue for hits — to make the story jump off the page.
 
 ![Hand-scored minor league card from the Jackson Rockabillys vs. Algoa River Dragons, May 2025, with red and blue color coding and a grand slam noted in the margin](/images/hand-scored/steven-harrison-jackson-rockabillys.jpg)

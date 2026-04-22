@@ -17,7 +17,9 @@ The strikeout is baseball's most symbolic out. Three strikes and you're done —
 
 The backwards K has become iconic in baseball culture. Fan sections hang backwards K signs for each strikeout by a dominant pitcher, counting them across the outfield wall. It's a mirror letter for a batter who didn't move — who stood frozen while the pitcher made them look foolish.
 
-<!-- TODO: Illustration of K vs backwards K notation -->
+Here's a hand-scored strikeout cell — a clean K with the out number circled below it. Simple, unmistakable, and used essentially unchanged since the 1860s.
+
+![Hand-scored strikeout cell showing K with circled out number — scorecard by Rick Moreno](/images/hand-scored/rick-moreno-strikeout.jpg)
 
 **BaseballScorer uses the backwards K** for called strikeouts — the mirror-image letter that's become iconic in baseball culture.
 

@@ -16,6 +16,10 @@ A ground out is written as the fielder numbers separated by dashes, in the order
 
 That's it. The first number is who picked it up, the last number is who caught it for the out. If the ball went through more than two hands, you add the middle fielders too.
 
+Here's a 6-3 ground out on a hand-scored card — shortstop to first baseman, with the out number circled:
+
+![Hand-scored 6-3 ground out cell — scorecard by Rick Moreno](/images/hand-scored/rick-moreno-groundout-6-3.jpg)
+
 ## Common Ground Outs
 
 Here are the ground outs you'll see most often, roughly in order of frequency:

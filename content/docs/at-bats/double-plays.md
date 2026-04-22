@@ -61,6 +61,10 @@ For a standard ground ball double play:
 
 The second out of the double play is recorded in the cell where that runner originally reached base, not in a new cell — because no new batter came to the plate for that out.
 
+Here's a 5-4-3 double play from a hand-scored card. Two cells tell the story: the batter's cell shows the fielding sequence and "DP," and the runner's cell (above) records the first out at second base:
+
+![Hand-scored 5-4-3 double play showing both the batter's cell and the runner's cell — scorecard by Rick Moreno](/images/hand-scored/rick-moreno-double-play.jpg)
+
 ## In BaseballScorer
 
 To record a ground ball double play, tap **Ground Out** and then select the fielders in sequence. BaseballScorer lets you tap up to three fielders for a single ground out sequence.
