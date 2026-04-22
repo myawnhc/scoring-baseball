@@ -24,6 +24,18 @@ A completed scorecard is a record of something that happened and will never happ
 
 Flip through a stack of old scorecards and you have a diary of games you saw. Scores forget themselves. Scorecards don't.
 
+Here's a hand-scored card from the 1998 MLB All-Star Game. The roster reads like a Hall of Fame ballot — Ripken, Piazza, Griffey, Gwynn, Clemens, Chipper Jones — and the heavy substitutions typical of an All-Star game make it a test of any scorer's bookkeeping. Every substitution, every pinch-hitter, every pitching change is captured on a single sheet of paper.
+
+![Hand-scored card from the 1998 MLB All-Star Game, showing both the American and National League lineups with extensive substitutions throughout the game](/images/hand-scored/rick-moreno-1998-all-star-game.jpg)
+
+And then there are the truly rare moments. On April 29, 2007, Troy Tulowitzki turned an unassisted triple play — one of fewer than twenty in Major League history. If you were there, you'd remember it. If you were there *and scoring*, you'd have the proof.
+
+![Hand-scored card from ATL at COL on April 29, 2007, capturing Troy Tulowitzki's unassisted triple play — one of the rarest plays in baseball history](/images/hand-scored/rick-moreno-unassisted-triple-play.jpg)
+
+Scorekeeping is alive at every level. This card from a 2025 minor league game between the Algoa River Dragons and the Jackson Rockabillys captures a grand slam (noted in the margin) and uses color coding — red for outs, blue for hits — to make the story jump off the page.
+
+![Hand-scored minor league card from the Jackson Rockabillys vs. Algoa River Dragons, May 2025, with red and blue color coding and a grand slam noted in the margin](/images/hand-scored/steven-harrison-jackson-rockabillys.jpg)
+
 ## You Understand the Game Better
 
 Scoring is baseball literacy. Once you know that 6-4-3 means shortstop to second baseman to first baseman, you start hearing that announced and immediately picturing it. Once you've tracked a pitcher's pitch count, you understand why the manager visits the mound in the seventh. Once you've recorded a fielder's choice, you understand why the batter is on base but doesn't have a hit.
@@ -53,3 +65,7 @@ If you're scoring on your phone or iPad, **BaseballScorer** is designed for exac
 Whether you go paper or digital, the fundamentals are the same. The rest of this guide covers those fundamentals: [the scorecard itself]({{< relref "the-scorecard" >}}), the notation for every outcome, and how to handle the situations that come up in real games.
 
 Start simple. Score one inning. You'll be hooked.
+
+---
+
+*Hand-scored cards on this page contributed by **Rick Moreno** and **Steven "Pops" Harrison**. Thank you for sharing your scorecards and for keeping the tradition alive.*
