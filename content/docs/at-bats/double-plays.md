@@ -33,7 +33,7 @@ The batter's cell shows 6-4-3 (the ground out), and the runner who was on first 
 - **3-6-3** — First baseman fields it, throws to shortstop covering second, gets the throw back at first. Requires a first baseman who can get off the bag quickly.
 - **5-3** — Third baseman fields it and throws directly to first. Only one out at first — but if a runner was already being retired elsewhere (e.g., a tag on third), this completes the double play.
 
-![Fielder position numbers on the diamond — the 6-4-3 double play follows the ball from shortstop (6) to second baseman (4) to first baseman (3)](/images/screenshots/fielding-positions.png)
+![The 6-4-3 double play: the ball is hit to the shortstop (6, blue), who throws to second base (4, red) to retire the lead runner, then on to first base (3, red) to retire the batter](/images/screenshots/DP6-4-3.png)
 
 ## Strikeout Double Plays
 
