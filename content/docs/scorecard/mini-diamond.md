@@ -19,18 +19,18 @@ The diamond has four segments, each representing a base path:
 - **Second to third base** (top-to-left leg)
 - **Third to home** (left-to-bottom leg)
 
-Each segment is drawn either as a **heavy line** or a **thin line**:
+Each segment is drawn either as a **heavy blue line** or a **thin gray line**:
 
-- **Heavy line** — the runner reached this base
-- **Thin line** — the runner did not reach this base (or didn't make it there)
+- **Heavy blue line** — the runner reached this base
+- **Thin gray line** — the runner did not reach this base (or didn't make it there)
 
-So a batter who hits a single has a heavy line on the home-to-first segment, and thin lines on the other three. A batter who hits a home run has heavy lines on all four segments.
+So a batter who hits a single has a heavy blue line on the home-to-first segment, and thin lines on the other three. A batter who hits a home run has heavy blue lines on all four segments.
 
 ![Diamond segments numbered 0-3, counterclockwise from home](/images/diagrams/diamond-segments-labeled.svg)
 
 ## Scored Runs
 
-If a runner scores — crosses home plate — the **interior of the diamond is filled in** (shaded or colored). An empty interior means the runner didn't score, even if they reached base. This single visual cue makes it easy to count runs at a glance: count the filled diamonds.
+If a runner scores — crosses home plate — the **interior of the diamond is filled in** with a blue tint. An empty interior means the runner didn't score, even if they reached base. This single visual cue makes it easy to count runs at a glance: count the filled diamonds.
 
 A home run always has a filled interior and heavy lines on all four segments. A runner who reaches second but gets stranded there has heavy lines on two segments and an empty interior.
 

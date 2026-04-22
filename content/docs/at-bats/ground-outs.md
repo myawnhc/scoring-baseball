@@ -52,7 +52,14 @@ When the defense chooses to get the lead runner instead of the batter, that's a 
 
 The ground out notation only records the batter's result. What happened to the other runners — did they advance? Were they thrown out? — is recorded separately through the runner's path on the scorecard.
 
-In BaseballScorer, after you record a ground out with runners on base, the app asks you what happened to each runner. You'll see toggles for each runner showing **SAFE**, **OUT**, or **STAY**, with smart defaults based on the situation (forced runners with a three-fielder sequence default to OUT, since that's probably a double play).
+In BaseballScorer, after you record a ground out with runners on base, the app asks you what happened to each runner. Each runner's resolution is **tappable** — tap it to cycle through the options:
+
+- **Out** — the runner was retired on the play (the default for forced runners when the fielding sequence involves their base)
+- **Safe** — the runner advanced safely to the next base
+- **Stays at _base_** — the runner held and didn't advance (only available when the runner isn't forced)
+- **Stranded** — the play resulted in the third out of the inning, so the runner is left on base
+
+The app sets smart defaults based on the situation — forced runners with a three-fielder sequence default to Out, since that's probably a double play — but you can tap any runner's status to change it to match what actually happened on the field.
 
 ![Runner resolution cards showing advancement options for each baserunner](/images/screenshots/runner-resolution.jpg)
 

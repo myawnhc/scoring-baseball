@@ -22,12 +22,12 @@ Once you internalize this, the colors stop being labels and start being informat
 
 | Color | Meaning | Where you see it |
 |---|---|---|
-| **Green** | Batter reached base safely; positive outcome | Hits (1B, 2B, 3B, HR), walks (BB, IBB), errors (E), fielder's choice (FC), stolen bases, safe advancement |
-| **Red** | Strikeout; out indicator; runner failed to advance | Strikeout text (K, backwards K), out circles (numbered), runner-out basepath indicators (CS, pickoff, force out) |
+| **Green** | Batter reached base safely; positive outcome | Hits (1B, 2B, 3B, HR), walks (BB, IBB), errors (E), fielder's choice (FC); inning summary card tint for batters who reached base |
+| **Red** | Strikeout; out indicator; runner thrown out | Strikeout text (K, Kc), out circles (numbered in white on red), runner-out basepath indicators (CS, pickoff, thrown out on bases) |
 | **Orange** | Called strikes, fouls, warnings, errors in the fielding sense, unknown | Called strike dots, foul ball dots, the `?` unknown notation, fielding errors during a sequence |
 | **Yellow** | Foul balls specifically | Foul pitch dots (in some display contexts) |
 | **Purple** | Hit by pitch; edit mode; review border | HBP notation, the edit-mode indicator on a card, review/flagged cards |
-| **Blue** | In play; MLB data; auto-fill | "In play" pitch state, auto-filled at-bat indicator (arrow), MLB reconciliation indicator (sync), RBI counts |
+| **Blue** | In play; base paths; MLB data; auto-fill | "In play" pitch state, base path lines on the mini diamond (reached safely), auto-filled at-bat indicator (arrow), MLB reconciliation indicator (sync), RBI counts |
 | **Brown** | Baserunner events not caused by the batter | Wild pitch (WP), passed ball (PB), balk (BK) advancement |
 | **Gold** | Occupied bases | Filled bases on the diamond display |
 
@@ -49,18 +49,19 @@ A full count with a walk looks like: red, green, orange, green, green — three 
 
 ![At-bat card showing colored pitch dots — green for balls, orange for called strikes, red for swinging strikes](/images/screenshots/pitch-dots.jpg)
 
-## Card Background Colors
+## Card Background Colors (Inning Summary)
 
-The at-bat card itself changes color based on state:
+In the inning summary column, at-bat cards use subtle background tints to indicate outcome:
 
 | Background | Meaning |
 |---|---|
 | Default (neutral) | Batter made an out (ground out, fly out, etc.) |
-| Light green tint | Batter reached base (on base now) |
-| Darker green tint | Batter reached base and scored a run |
+| Light green tint | Batter reached base (hit, walk, error, FC) |
 | Purple border | Card is in edit mode or flagged for review |
 
-The two shades of green let you scan an inning at a glance — light green cards are runners still on base, darker green cards are runners who came around to score. A column full of green means a big inning.
+The green tint lets you scan an inning at a glance — green cards are batters who reached base. Cards without a tint are outs. Out cards show a **red out circle** with the out number (1, 2, or 3) rather than a red background.
+
+The scorecard grid does **not** use tinted backgrounds — cells are all the same neutral background. The visual information is carried by the mini diamond, fielding notation, pitch dots, and out circles.
 
 ![Half-inning complete view showing green and neutral card backgrounds](/images/screenshots/half-inning-complete.jpg)
 

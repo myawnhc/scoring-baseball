@@ -22,7 +22,7 @@ A batter who reaches first but then advances further on the throw (or other acti
 
 The batter reaches second base. Write **2B** in the cell. On the diamond, draw lines from home to first and first to second.
 
-**Ground rule doubles** are scored the same way — **2B** — but some scorekeepers add a note like "GRD" or "GR" to distinguish them. The batter gets second base automatically by rule (typically because the ball bounced into the stands), but statistially it's identical to any other double.
+**Ground rule doubles** are scored the same way — **2B** — but some scorekeepers add a note like "GRD" or "GR" to distinguish them. The batter gets second base automatically by rule (typically because the ball bounced into the stands), but statistically it's identical to any other double. In BaseballScorer, long-press the **Double** button to select "Ground Rule Double" — the app records it as a 2B with the ground-rule designation.
 
 ### Triple (3B)
 
@@ -46,7 +46,13 @@ The key: if the batter reaches base on a bunt with no error involved, it's a hit
 
 ## Color Coding
 
-Hits are green. On a paper scorecard this might be implicit (reaching base is generally good), but in digital scoring apps like BaseballScorer, the cell background or the diamond trace turns green for any outcome where the batter reached base safely. Green means safe; red means out. You'll internalize this quickly.
+In BaseballScorer, the at-bat card backgrounds tell you at a glance what happened:
+
+- **Light green** — the batter reached base and is still on base
+- **Slightly darker green** — the batter reached base and eventually scored
+- **No colored background** — the batter made an out. A **red out circle** shows the out number (1, 2, or 3). If the batter reached base but was later thrown out, a **red line segment** on the mini diamond shows where on the base paths they were retired.
+
+This green = safe / red = out convention runs throughout the app. You'll internalize it quickly.
 
 ![At-bat card with green background indicating the batter reached base on a hit](/images/screenshots/pitch-dots.jpg)
 

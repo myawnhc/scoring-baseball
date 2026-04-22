@@ -24,7 +24,7 @@ To follow the game, you read down the first column for the first inning, then do
 
 Each cell captures the full story of one plate appearance:
 
-- **Mini diamond** — shows where the batter went on the bases (or didn't). Heavy lines trace the path the runner took; a filled interior means they scored.
+- **Mini diamond** — shows where the batter went on the bases (or didn't). Heavy blue lines trace the path the runner took; a filled interior means they scored.
 - **Fielding notation** — the out or hit notation, using fielder numbers. A 6-3 is shortstop to first base. An F8 is a flyout to center. A "1B" is a single.
 - **Pitch dots** — small colored dots showing each pitch in the at-bat (balls, strikes, fouls).
 - **Out indicator** — a small circle in the cell that gets filled or annotated when the batter is retired.

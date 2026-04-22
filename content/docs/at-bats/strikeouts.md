@@ -8,28 +8,22 @@ description: "Strikeout notation in baseball — K for swinging, backwards K for
 
 The strikeout is baseball's most symbolic out. Three strikes and you're done — but how you got there matters enough to record differently depending on whether the batter went down swinging or stood there watching strike three go past.
 
-## K and Kc
+## K and the Backwards K
 
 **K** is the universal symbol for a strikeout. It dates to the 1860s, when Henry Chadwick (the father of baseball statistics) chose K because "struck" — the root of "strikeout" — ends in K. S was already taken for sacrifice.
 
 - **K** — strikeout swinging. The batter swung at strike three and missed.
-- **Kc** — strikeout looking (called). Strike three was called by the umpire; the batter did not swing.
+- **Backwards K** (Ꝁ) — strikeout looking (called). Strike three was called by the umpire; the batter did not swing. Some scorekeepers write this as **Kc** instead.
 
-Some scorekeepers write the called strikeout as a *backwards K* — a mirror image of the letter — rather than Kc. Both mean exactly the same thing. The backwards K has become iconic in baseball culture; fan sections sometimes hang backwards K signs for each strikeout by a dominant pitcher, counting them across the outfield wall.
+The backwards K has become iconic in baseball culture. Fan sections hang backwards K signs for each strikeout by a dominant pitcher, counting them across the outfield wall. It's a mirror letter for a batter who didn't move — who stood frozen while the pitcher made them look foolish.
 
 <!-- TODO: Illustration of K vs backwards K notation -->
 
-**BaseballScorer uses Kc** (the text abbreviation) rather than a backwards K, for legibility on screen.
-
-## The Tradition of the Backwards K
-
-The backwards K shows up so often in fan culture partly because of the aesthetic — a mirror letter for a batter who didn't move, who stood frozen while the pitcher made them look foolish. It's a small piece of baseball poetry embedded in notation.
-
-In the press box and in fan sections at games like Shea Stadium (where the tradition was particularly strong for strikeout artists), you'd see backwards K signs go up after each punchout. That tradition lives on in any park where a power pitcher is on the mound and the fans are paying attention.
+**BaseballScorer uses the backwards K** for called strikeouts — the mirror-image letter that's become iconic in baseball culture.
 
 ## Color Coding
 
-Strikeouts are red. On a scorecard, red cells indicate an out — and a strikeout is the purest kind of out, with no defensive involvement whatsoever. The pitcher did it alone.
+Strikeout text is rendered in red on the scorecard. This makes strikeouts visually pop when scanning the grid — you can quickly see how many Ks a pitcher racked up without reading every cell. The red text stands out against the otherwise neutral scorecard, giving you an instant read on a pitcher's dominance.
 
 ## Dropped Third Strike
 
@@ -58,12 +52,12 @@ These are unusual enough that you may never see one in a season of casual scorin
 
 **With pitch tracking on:** BaseballScorer detects strikeouts automatically. As you record each pitch, the count updates in real time. When the third strike is recorded — whether swinging, looking, or foul tip — BaseballScorer recognizes the at-bat is complete.
 
-If the final pitch was a swinging strike, the outcome is recorded as **K**. If you mark the pitch as "called strike," it becomes **Kc**.
+If the final pitch was a swinging strike, the outcome is recorded as **K**. If you mark the pitch as "called strike," it becomes a **backwards K**.
 
 A dropped third strike (wild pitch or passed ball on strike three) is handled by continuing the at-bat after the strikeout — BaseballScorer stays in the at-bat and lets you record what happened to the batter.
 
-**Without pitch tracking (manual entry):** Tap **K** (swinging) or **Kc** (looking) directly in the outcome button grid. The at-bat closes immediately. No additional input is needed for a standard strikeout.
+**Without pitch tracking (manual entry):** Tap **K** (swinging) or **Ꝁ** (looking) directly in the outcome button grid. The at-bat closes immediately. No additional input is needed for a standard strikeout.
 
 ![Outcome button grid with K (swinging) and other result options](/images/screenshots/outcome-button-grid.jpg)
 
-The scorecard cell shows the K or Kc notation with a red background. If pitch dots are enabled, you'll see the sequence of pitches that led to the strikeout.
+The scorecard cell shows the K or backwards K notation in red text. If pitch dots are enabled, you'll see the sequence of pitches that led to the strikeout.

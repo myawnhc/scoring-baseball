@@ -14,30 +14,21 @@ There are two ways to track pitches: the full pitch-by-pitch method, which recor
 
 **Pitch count awareness.** A starter who throws 30 pitches in the first inning is in trouble by the fifth. Tracking pitches lets you watch this in real time — you'll know before the manager does that the bullpen call is coming.
 
-**Sequence patterns.** Is the pitcher going fastball-curveball to every lefty? Did he go to the slider three times in a row before giving up that homer? Pitch sequences turn a scorecard into genuine scouting data.
-
 **Strikeout analysis.** There's a meaningful difference between a swinging strikeout and a called third strike. Swinging Ks suggest the batter is chasing; called Ks suggest they got caught looking — often at a pitch on the corner they didn't expect. Tracking both separately gives you a richer picture of who's controlling the at-bat.
 
-**Historical record.** A scorecard with full pitch data is a primary source. Decades from now, you'll know not just that a batter struck out in the sixth, but that he saw a 1-2 curveball and went down swinging.
+**Historical record.** A scorecard with full pitch data is a primary source. Decades from now, you'll know not just that a batter struck out in the sixth, but that he went down swinging on a 1-2 count after fouling off three pitches.
 
 ## The Two Tracking Modes
 
 ### Full Pitch-by-Pitch Tracking
 
-In the traditional paper method, each pitch is recorded in a small box or sequence of symbols. Common shorthand:
+On a traditional paper scorecard, pitch tracking is usually minimal: three small boxes for balls and two for strikes, and you fill them in as the count progresses. Some scorers put a dot in each box; others write a letter (C for called, S for swinging, F for foul) to capture more detail. Either way, the paper method records the **final count** — you know the at-bat ended on a 3-2 count, but you don't know what happened on each individual pitch, and you can't tell the difference between a 10-pitch at-bat with six fouls and a quick 5-pitch count.
 
-- **B** — Ball
-- **C** or **S** — Called strike (looking)
-- **S** or **W** — Swinging strike (some systems use W to distinguish from called)
-- **F** — Foul ball
-- **X** — Ball in play (the at-bat ends here)
-- **HBP** — Hit by pitch
-
-Because there's no universal standard, scorers have developed dozens of variants. The key is to pick a system and stick with it throughout a game.
+<!-- TODO: Photo of a paper scorecard showing the ball/strike boxes with dots filled in -->
 
 The count progresses as you record pitches. After four balls, the batter walks. After three strikes — swinging or called — the batter is out, except that a foul ball with two strikes doesn't count as the third strike (unless it's a bunted foul, which does).
 
-<!-- TODO: Screenshot of paper scorecard with pitch sequence notation in at-bat box -->
+Digital scoring changes this significantly. Instead of a fixed grid of boxes, BaseballScorer records **every pitch in sequence** — including all those two-strike fouls that paper scorecards lose. A 12-pitch at-bat where the batter fouled off seven pitches before drawing a walk shows all 12 dots in order, telling the full story of an epic plate appearance that paper would compress to "3-2, BB."
 
 ### No-Track Mode
 
@@ -56,9 +47,11 @@ When scoring digitally, pitches are often represented as colored dots — one do
 | Purple | Hit by pitch |
 | Blue | In play (at-bat ends) |
 
-Reading a row of dots left-to-right gives you the entire pitch sequence at a glance. A long string of green and yellow means the batter fought off a lot of pitches. A quick orange-red-red means they never got comfortable.
+This color-coded dot notation is, as far as we're aware, unique to BaseballScorer. Traditional paper scorecards track only the final count; broadcast graphics sometimes color-code by pitch *type* (fastball vs. slider). The dot system instead encodes each pitch *result* in sequence, so you can read the full story of an at-bat from a single row of colored dots.
 
-![At-bat cards showing colored pitch dots — green for balls, red/orange for strikes](/images/screenshots/half-inning-complete.jpg)
+A long string of green and yellow means the batter fought off a lot of pitches. A quick orange-red-red means they never got comfortable.
+
+![Active at-bat showing the ball-strike count, pitch dots, and color-coded pitch buttons](/images/screenshots/balls-and-strikes.jpg)
 
 ## How Foul Balls Work
 

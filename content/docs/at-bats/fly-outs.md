@@ -25,7 +25,7 @@ Examples:
 - **FF2** — foul pop-up caught by the catcher
 - **F5** — pop-up caught by the third baseman
 
-![Baseball fielder position numbers on the diamond — 1 (pitcher) through 9 (right field)](/images/screenshots/fielding-positions.jpg)
+![Baseball fielder position numbers on the diamond — 1 (pitcher) through 9 (right field)](/images/screenshots/fielding-positions.png)
 
 The fielder number is always the person who made the *catch*. If a center fielder drifts to right-center and catches a ball that the right fielder was also running toward, it's still F8 because 8 (center field) made the play.
 
@@ -34,6 +34,10 @@ The fielder number is always the person who made the *catch*. If a center fielde
 The distinction between **F** and **L** matters more than it might seem. Line drives are hit hard and on a flat trajectory — they're more dangerous to runners and more impressive defensively than routine fly balls. The L notation preserves that context in the scorecard.
 
 A sharply hit ball directly at an infielder might be recorded as **L** (line drive) rather than **F** (fly ball) to reflect the nature of the contact, even if the fielder barely had to move.
+
+## Why Pop Outs Don't
+
+You might wonder why infield pop-ups don't get the same treatment. Some scorekeepers do use **P** or **IF** to distinguish them, but there's less reason to bother. A pop-up to the shortstop and a fly out to the shortstop are essentially the same play — the fielder caught a ball in the air. Line drives earn their own letter because they represent a fundamentally different kind of contact: hard, flat, and fast. Pop-ups are just lazy fly balls that didn't go very far. The **F** prefix covers both fine, and the fielder number already tells you it was an infielder.
 
 ## Foul Outs
 

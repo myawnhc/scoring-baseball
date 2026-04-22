@@ -16,6 +16,8 @@ There's a peculiar thing that happens when you open a scorecard. The game slows 
 
 Scoring forces you to pay attention to all of it, because you'll need to record it. And paying attention to all of it makes baseball — a game sometimes unfairly accused of being slow — genuinely compelling from first pitch to last out.
 
+That said, you don't have to be perfect about it. Miss a play while you're grabbing a hot dog or explaining the infield fly rule to your kid? That's fine. BaseballScorer is powerful enough to satisfy the detail-oriented fan who records every pitch, but forgiving enough for the casual viewer who just wants to follow along. If you fall behind, the app's [MLB catch-up tools]({{< relref "/docs/advanced/mlb-integration" >}}) can fill in what you missed — one play at a time or all at once. No field left blank should ever stop you from enjoying the game.
+
 ## You Build a Memory
 
 A completed scorecard is a record of something that happened and will never happen exactly the same way again. The box score tells you the final line. The scorecard tells you the *story*: the pitcher who cruised for six innings before running into trouble, the cleanup hitter who went 0-for-4 but drove in two runs, the double play that ended a bases-loaded threat in the fifth.
