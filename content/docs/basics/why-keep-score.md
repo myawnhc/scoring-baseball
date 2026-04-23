@@ -36,9 +36,9 @@ Look closely at the Colorado half and you can see it — three cells in a row, e
 
 ![Cropped cells from the unassisted triple play — three consecutive TP entries recording all three outs on a single play](/images/hand-scored/rick-moreno-unassisted-tp-crop.jpg)
 
-Scorekeeping is alive at every level. This card from a 2025 minor league game between the Algoa River Dragons and the Jackson Rockabillys captures a grand slam (noted in the margin) and uses color coding — red for outs, blue for hits — to make the story jump off the page.
+Scorekeeping is alive at every level. This card from a 2025 minor league game between the Algoa River Dragons and the Jackson Rockabillys captures a grand slam (noted in the margin) and uses color coding — red for strikeouts, with switches between blue and black ink to mark pitching changes — making it easy to see at a glance how the lineup fared against each pitcher.
 
-![Hand-scored minor league card from the Jackson Rockabillys vs. Algoa River Dragons, May 2025, with red and blue color coding and a grand slam noted in the margin](/images/hand-scored/steven-harrison-jackson-rockabillys.jpg)
+![Hand-scored minor league card from the Jackson Rockabillys vs. Algoa River Dragons, May 2025, with red ink for strikeouts, blue and black ink changes marking pitching changes, and a grand slam noted in the margin](/images/hand-scored/steven-harrison-jackson-rockabillys.jpg)
 
 ## You Understand the Game Better
 
