@@ -34,8 +34,6 @@ The pitcher throws a pitch that strikes the batter. The batter takes first base,
 
 A hit by pitch is generally considered more of a negative outcome for the pitcher than a walk, because the pitcher had *less* control — they didn't just miss the strike zone, they hit someone. HBP counts separately in many statistical contexts.
 
-![Outcome buttons including BB, HBP, and IBB options](/images/screenshots/scoring-view-full.jpg)
-
 ## Runner Advancement
 
 All three outcomes put the batter on first base. If first base was already occupied, the runner on first is forced to second. If first and second were both occupied, runners advance one base all around. If the bases were loaded, a run scores.
