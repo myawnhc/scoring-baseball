@@ -87,7 +87,7 @@ See [strikeouts]({{< relref "/docs/at-bats/strikeouts" >}}) for the notation dif
 
 ## The Challenge System
 
-In MLB, managers can challenge certain calls using instant replay. BaseballScorer supports this: you can flag a pitch call as challenged. If the challenge is overturned, the pitch is removed from the sequence as if it didn't happen. If the call is upheld, the challenge is spent and the pitch stands. This keeps your pitch sequence accurate even when the umpires change their minds.
+In MLB, managers can challenge certain calls using instant replay. BaseballScorer supports this: you can flag a pitch call as challenged. If the call is **upheld**, the original pitch dot is circled — a visual flag that it was reviewed but unchanged. If the challenge is **overturned**, the original pitch appears as a hollow circle (voided) followed by the corrected pitch, and both are enclosed in a capsule. You can see at a glance what was originally called and what it became. See [Challenges]({{< relref "/docs/game-management/challenges" >}}) for full details and screenshots.
 
 ## Pitch Counts on the Scorecard
 

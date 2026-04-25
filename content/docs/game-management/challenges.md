@@ -23,11 +23,9 @@ There's no universally standardized notation for challenges — they're a recent
 
 - Circle or annotate the pitch/play dot with a small **"Ch"** or **"R"** (for Review)
 - For an **upheld** call: draw a small ring around the play dot to indicate it was reviewed but unchanged
-- For an **overturned** call: show the original call (crossed out or open) alongside the corrected result
+- For an **overturned** call: show the original call as a hollow (open) circle alongside the filled corrected result — both circled together in a capsule
 
 Since challenges typically happen on bang-bang plays — stolen base attempts, tag plays, force outs — the notation usually lives in the baserunner path on the mini diamond or next to the fielding notation in the cell.
-
-<!-- TODO: Screenshot of scorecard cell showing challenge notation for upheld vs overturned call -->
 
 ## In BaseballScorer
 
@@ -35,18 +33,27 @@ BaseballScorer integrates challenge tracking directly into the pitch-by-pitch fl
 
 After recording a pitch or play, a **Challenge button** appears. Tap it to trigger a challenge alert with three options:
 
-- **Overturned** — the call is reversed. The pitch or play result is removed and replaced with the corrected outcome.
+- **Overturned** — the call is reversed. The original pitch stays visible (as a hollow dot) and the corrected pitch appears next to it.
 - **Upheld** — the original call stands. The team loses their challenge.
 - **Cancel** — you tapped the button by accident; nothing changes.
 
 ![Challenge Result dialog with Overturned, Upheld, and Cancel options](/images/screenshots/challenge-dialog.jpg)
 
-**Visual notation in the pitch sequence:** Challenges leave a distinct visual mark in the pitch dot display.
+**Visual notation in the pitch sequence:** Challenges leave a distinct visual mark in the pitch dot display. Both upheld and overturned challenges are circled so you can spot them at a glance.
 
-- An **upheld** challenge shows the original pitch dot with a ring around it — the dot is unchanged but visually flagged as reviewed.
-- An **overturned** challenge shows the original (hollow) dot alongside the corrected (filled) dot in a connected capsule — you can see both what was called and what it became.
+**Upheld challenge:** The original pitch dot is circled — the call was reviewed but stands unchanged. Here, a called strike was challenged and upheld:
 
-![At-bat card showing overturned challenge — pitch dots include the challenge capsule notation](/images/screenshots/challenge-overturned.jpg)
+![Pitch dots showing an upheld challenge — the called strike dot is circled](/images/screenshots/challenge-upheld.jpg)
+
+**Overturned: ball becomes strike.** The original ball appears as a hollow orange circle (voided), followed by the corrected called strike (filled green dot). Both are enclosed in a capsule:
+
+![Pitch dots showing an overturned challenge — hollow ball dot and filled strike dot in a capsule](/images/screenshots/challenge-overturned-ball-to-strike.jpg)
+
+**Overturned: strike becomes ball.** The original called strike appears as a hollow green circle (voided), followed by the corrected ball (filled orange dot). Both are enclosed in a capsule:
+
+![Pitch dots showing an overturned challenge — hollow strike dot and filled ball dot in a capsule](/images/screenshots/challenge-overturned-strike-to-ball.jpg)
+
+The key idea: nothing is erased. The original call is always visible as a hollow circle so you can read exactly what happened — what was called, that it was challenged, and what it became. Your pitch sequence tells the full story.
 
 **Challenge status bar:** A persistent indicator shows how many challenges each team has remaining. In a standard MLB game, that starts at one per team and goes to zero after an upheld challenge. The status bar updates automatically when a challenge is resolved.
 
