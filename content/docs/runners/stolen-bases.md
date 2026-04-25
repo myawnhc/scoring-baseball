@@ -36,6 +36,24 @@ Caught stealing is recorded with the **CS** abbreviation. On a paper scorecard, 
 
 The caught stealing counts against the runner's stolen base statistics. Stolen base percentage (SB / (SB + CS)) is the standard measure of basestealing efficiency — anything above 70-75% is generally considered break-even.
 
+### When Caught Stealing Makes the Third Out
+
+Here's a scoring scenario that trips people up: a runner gets caught stealing for the third out of the inning *while another batter is mid-at-bat*. The batter didn't finish his plate appearance — the inning just ended underneath him. What do you write in his scorecard cell?
+
+The answer: nothing, really. The batter's at-bat didn't happen. He comes back to lead off the next inning with a fresh count, as if the interrupted plate appearance never existed. On a paper scorecard, you'd leave the cell blank or draw a line through it.
+
+BaseballScorer handles this automatically. When a caught stealing (or any runner event) records the third out mid-at-bat, the current batter's cell shows a crossed-out **AB** symbol — a visual shorthand for "this plate appearance was interrupted and doesn't count." The text below the cell explains what happened: the at-bat ended because of the runner event, not anything the batter did.
+
+In the inning summary, you can see the full picture — Harper's single with the CS annotation on the runner path, and Garcia's interrupted at-bat below it:
+
+![Inning summary showing Harper's single with CS on the base path, and Garcia's interrupted at-bat with crossed-out AB notation](/images/screenshots/caught-stealing-interrupted-scoring.jpg)
+
+On the landscape scorecard, the same information is condensed into the grid. Garcia's cell shows the crossed-out AB with an arrow pointing back to Harper's cell where the actual play happened:
+
+![Scorecard cell showing interrupted at-bat notation — crossed-out AB with arrow to the preceding batter's cell](/images/screenshots/caught-stealing-interrupted-scorecard.jpg)
+
+This comes up more often than you'd expect — any time the third out happens on the bases while a batter is in the box. Caught stealing is the most common cause, but a runner thrown out trying to advance on a wild pitch or picked off can trigger it too.
+
 ## Pickoffs
 
 A **pickoff** is different from a caught stealing. On a pickoff, the pitcher (or catcher on a pickoff from the catcher) throws to a base while the runner is not attempting to steal — the runner is simply caught too far off the bag. If the fielder tags the runner before he can return, the runner is out.
