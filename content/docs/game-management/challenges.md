@@ -45,11 +45,11 @@ After recording a pitch or play, a **Challenge button** appears. Tap it to trigg
 
 ![Pitch dots showing an upheld challenge — the called strike dot is circled](/images/screenshots/challenge-upheld.jpg)
 
-**Overturned: ball becomes strike.** The original ball appears as a hollow orange circle (voided), followed by the corrected called strike (filled green dot). Both are enclosed in a capsule:
+**Overturned: ball becomes strike.** The original ball appears as a hollow green circle (voided), followed by the corrected called strike (filled orange dot). Both are enclosed in a capsule:
 
 ![Pitch dots showing an overturned challenge — hollow ball dot and filled strike dot in a capsule](/images/screenshots/challenge-overturned-ball-to-strike.jpg)
 
-**Overturned: strike becomes ball.** The original called strike appears as a hollow green circle (voided), followed by the corrected ball (filled orange dot). Both are enclosed in a capsule:
+**Overturned: strike becomes ball.** The original called strike appears as a hollow orange circle (voided), followed by the corrected ball (filled green dot). Both are enclosed in a capsule:
 
 ![Pitch dots showing an overturned challenge — hollow strike dot and filled ball dot in a capsule](/images/screenshots/challenge-overturned-strike-to-ball.jpg)
 
