@@ -48,9 +48,9 @@ In the inning summary, you can see the full picture — Harper's single with the
 
 ![Inning summary showing Harper's single with CS on the base path, and Garcia's interrupted at-bat with crossed-out AB notation](/images/screenshots/caught-stealing-interrupted-scoring.jpg)
 
-On the landscape scorecard, the same information is condensed into the grid. Garcia's cell shows the crossed-out AB with an arrow pointing back to Harper's cell where the actual play happened:
+On the landscape scorecard, the same information is condensed into the grid. Garcia's cell shows the crossed-out AB with an arrow pointing to his next at-bat in the following inning. On a normal scorecard, a diagonal slash in the cell marks the end of an inning — the next cell to score is one column over and one row down. Here, because Garcia leads off the next inning with a fresh count, the arrow points directly to the right — same row, next column:
 
-![Scorecard cell showing interrupted at-bat notation — crossed-out AB with arrow to the preceding batter's cell](/images/screenshots/caught-stealing-interrupted-scorecard.jpg)
+![Scorecard cell showing interrupted at-bat notation — crossed-out AB with arrow to Garcia's next at-bat in the following inning](/images/screenshots/caught-stealing-interrupted-scorecard.jpg)
 
 This comes up more often than you'd expect — any time the third out happens on the bases while a batter is in the box. Caught stealing is the most common cause, but a runner thrown out trying to advance on a wild pitch or picked off can trigger it too.
 
