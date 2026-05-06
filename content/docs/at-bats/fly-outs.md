@@ -74,7 +74,7 @@ To record a fly out, tap **Fly Out**, **Line Out**, or **Foul Out** in the outco
 
 ![Fielding sequence interface showing fielder numbers on the diamond](/images/screenshots/fielding-sequence.jpg)
 
-For most fly outs, that's the entire entry: outcome type + one fielder tap. BaseballScorer confirms the out automatically.
+For most fly outs, that's the entire entry: outcome type + one fielder tap. BaseballScorer confirms the out automatically. If it was a spectacular catch, tap the **★ star button** before confirming to mark it as a [defensive gem]({{< relref "/docs/reference/notation-cheat-sheet#defensive-gem" >}}).
 
 **Sacrifice flies:** When a runner is on third with fewer than two outs and you record a fly out, BaseballScorer will prompt you whether the runner scored. If you confirm the runner scored, the out is recorded as a sacrifice fly (SF) rather than a plain fly out, the run is credited, and the batter does not receive an at-bat.
 

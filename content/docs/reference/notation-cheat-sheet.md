@@ -133,6 +133,20 @@ The `DP` suffix can be appended to any out notation when two outs result from th
 
 ---
 
+## Defensive Gem
+
+**Gold star** — marks an outstanding defensive play.
+
+| Notation | Meaning |
+|---|---|
+| ★ | Defensive gem — a spectacular catch, diving stop, or other great play |
+
+When recording any out with a fielding sequence, a star button appears next to the Confirm button. Tap it to mark the play as a defensive gem. The gold star appears on both the scorecard cell and the inning summary card.
+
+This is the digital version of the star or exclamation point that paper scorers write in a scorecard box to note an exceptional defensive play. It doesn't affect any statistics — it's a personal annotation for plays worth remembering.
+
+---
+
 ## Unknown / Unscored
 
 **Orange** — something happened but it wasn't recorded.

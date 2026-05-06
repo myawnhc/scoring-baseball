@@ -76,6 +76,8 @@ Here's the flow:
 3. **Tap "Complete"** (or "Unassisted" if only one fielder was involved)
 4. **Resolve runners** if any were on base — toggle each runner's fate
 
+Was it a great defensive play? Before tapping Complete, tap the **★ star button** to mark it as a defensive gem. A gold star appears on the scorecard and inning summary — the same idea as the star or exclamation point paper scorers use to highlight spectacular plays.
+
 The app builds the notation automatically: tap 6, tap 3, and you'll see "6-3" appear in the batter's completed at-bat card.
 
 ![Ground out 5-3 fielding sequence — fielder numbers highlighted on the diamond with GO notation](/images/screenshots/ground-out-sequence.png)
