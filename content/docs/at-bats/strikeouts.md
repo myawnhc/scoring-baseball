@@ -31,18 +31,13 @@ Strikeout text is rendered in red on the scorecard. This makes strikeouts visual
 
 Here's a wrinkle: a strikeout is not always an out.
 
-If the catcher fails to catch strike three cleanly — the ball bounces away — the batter may attempt to run to first base. The rule: the batter can run if first base is unoccupied (or if there are two outs). The catcher must then throw to first to retire the batter, just like any other ground ball.
+If the catcher fails to catch strike three cleanly — the ball bounces away — the batter may attempt to run to first base, **provided first base is unoccupied or there are two outs**. The catcher must then throw to first (or tag the batter) to retire the batter, just like any other ground ball.
 
-If the batter reaches first safely on a dropped third strike:
-- The pitcher still gets credit for a strikeout (K)
-- The catcher gets charged with a passed ball (PB) or the pitcher with a wild pitch (WP), depending on the scorer's judgment
-- The batter is credited as reaching on a strikeout — write **K-WP** or **K-PB** to show what happened
+This rule opens up six different scoring notations — K-WP, K-PB, K 2-3, K 2T, K E2, K E3 — covering the cases where the batter reaches base on a wild pitch, on a passed ball, on a catcher's error, on a first baseman's error, or is retired by the catcher's throw or tag.
 
-If the catcher recovers and throws to first in time:
-- Score it **K, 2-3** — strikeout, catcher to first baseman
-- The pitcher gets the strikeout; the catcher gets an assist
+The pitcher always gets credit for the strikeout regardless of which variant. What changes is whether the out is recorded and which fielder (if any) is charged with an error or credited with the putout.
 
-<!-- TODO: Screenshot of BaseballScorer's dropped third strike flow -->
+For the rule mechanics, all six notations explained, and how each variant affects pitcher IP and the earned-runs calculation, see [Dropped Third Strike]({{< relref "dropped-third-strike" >}}).
 
 ## Strikeout Double Plays
 
@@ -52,13 +47,13 @@ These are unusual enough that you may never see one in a season of casual scorin
 
 ## In BaseballScorer
 
-**With pitch tracking on:** BaseballScorer detects strikeouts automatically. As you record each pitch, the count updates in real time. When the third strike is recorded — whether swinging, looking, or foul tip — BaseballScorer recognizes the at-bat is complete.
+**With pitch tracking on:** BaseballScorer detects strikeouts automatically. As you record each pitch, the count updates in real time. When the third strike is recorded — whether swinging or looking — BaseballScorer recognizes the at-bat is complete.
 
 If the final pitch was a swinging strike, the outcome is recorded as **K**. If you mark the pitch as "called strike," it becomes a **backwards K**.
 
-A dropped third strike (wild pitch or passed ball on strike three) is handled by continuing the at-bat after the strikeout — BaseballScorer stays in the at-bat and lets you record what happened to the batter.
+For a dropped third strike, long-press the Called Strike or Swinging Strike button instead of tapping; a menu lets you pick any of the six variants (K-WP, K-PB, K 2-3, K 2T, K E2, K E3). See [Dropped Third Strike]({{< relref "dropped-third-strike" >}}) for the full flow.
 
-**Without pitch tracking (manual entry):** Tap **K** (swinging) or **Ꝁ** (looking) directly in the outcome button grid. The at-bat closes immediately. No additional input is needed for a standard strikeout.
+**Without pitch tracking (manual entry):** Tap **K** (swinging) or **Ꝁ** (looking) directly in the outcome button grid. The at-bat closes immediately. Long-press either button to open the dropped-third-strike menu if the play needs one of the six D3K variants.
 
 ![Outcome button grid with K (swinging) and other result options](/images/screenshots/outcome-button-grid.jpg)
 
