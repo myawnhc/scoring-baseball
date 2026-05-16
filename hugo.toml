@@ -7,6 +7,12 @@ defaultContentLanguage = "en"
 enableRobotsTXT = true
 copyright = "BaseballScorer"
 
+# Disable empty tag/category taxonomy pages. We don't assign tags, so Hugo's
+# auto-generated /tags/ and /categories/ indexes are thin pages with no content
+# that Google flags as low-quality and won't index. Removing them keeps the
+# site's average page quality higher.
+disableKinds = ["taxonomy", "term"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

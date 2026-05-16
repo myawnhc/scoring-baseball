@@ -1,6 +1,10 @@
 ---
 title: "How to Score Baseball"
 type: docs
+description: "Learn how to keep score at a baseball game. Notation, scorecards, fielder numbering, pitch tracking, baserunning, substitutions, and every play type — from the basics to the rule-heavy edge cases. A complete guide for new scorers and a reference for old hands."
+sitemap:
+  priority: 1.0
+  changefreq: weekly
 ---
 
 # How to Score Baseball
