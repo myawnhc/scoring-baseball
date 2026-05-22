@@ -44,16 +44,16 @@ Starting in 2026, MLB lets batters, pitchers, and catchers challenge ball/strike
 
 An ABS overturn changes a pitch from a ball to a called strike (or vice versa). That can have downstream effects on the count and the at-bat: a 3-1 ball becomes 3-2 strike, an apparent walk on ball four becomes a still-live at-bat, an apparent strikeout becomes a still-live at-bat with a ball added.
 
-## Noting a Challenge on the Scorecard
+## Noting a Challenge on a Paper Scorecard
 
-There's no universally standardized notation for challenges — they're a recent addition to the game and scoring conventions vary. The two challenge types call for different markings:
+There's no universally standardized notation for challenges — they're a recent addition to the game and scoring conventions vary. Use whatever works for you. A few approaches scorers use in practice:
 
-**ABS (pitch) challenges** operate on individual pitches, so the notation lives on the pitch sequence:
+- A small **"Ch"** (or **"R"** for Review) somewhere on the play — in the corner of the at-bat cell, near a pitch in the pitch sequence, or next to a fielding notation
+- For an **upheld** challenge, you might mark just "Ch" since nothing actually changed
+- For an **overturned** challenge in pencil, erase the original and write the corrected scoring (with optional "Ch" annotation)
+- For an **overturned** challenge in ink, you could strike through the original scoring and add the corrected version, perhaps as "Ch <new scoring>" — the strike-through preserves the history of what was first called
 
-- For an **upheld** ABS challenge: draw a small ring around the pitch dot for the challenged pitch to show it was reviewed but unchanged
-- For an **overturned** ABS challenge: show the original pitch as a hollow (open) circle next to the corrected pitch (filled), both enclosed in a capsule — nothing is erased, so the sequence tells the full story
-
-**Manager challenges** operate on entire plays (safe/out, catch/trap, fair/foul), so the notation lives on the cell as a whole — a small **"Ch"** badge somewhere on the at-bat cell. There's no circled dot for manager challenges; the result reflected in the cell is the post-overturn outcome, and the badge tells you a review happened.
+The right answer is whatever lets you read the scorecard later and understand both what happened and that a review took place. Many casual scorers don't note challenges at all if the corrected scoring is already on the card.
 
 ## In BaseballScorer
 
