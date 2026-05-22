@@ -46,17 +46,18 @@ An ABS overturn changes a pitch from a ball to a called strike (or vice versa). 
 
 ## Noting a Challenge on the Scorecard
 
-There's no universally standardized notation for challenges — they're a recent addition to the game and scoring conventions vary. A common approach:
+There's no universally standardized notation for challenges — they're a recent addition to the game and scoring conventions vary. The two challenge types call for different markings:
 
-- Circle or annotate the pitch/play dot with a small **"Ch"** or **"R"** (for Review)
-- For an **upheld** call: draw a small ring around the play dot to indicate it was reviewed but unchanged
-- For an **overturned** call: show the original call as a hollow (open) circle alongside the filled corrected result — both circled together in a capsule
+**ABS (pitch) challenges** operate on individual pitches, so the notation lives on the pitch sequence:
 
-Since challenges typically happen on bang-bang plays — stolen base attempts, tag plays, force outs — the notation usually lives in the baserunner path on the mini diamond or next to the fielding notation in the cell.
+- For an **upheld** ABS challenge: draw a small ring around the pitch dot for the challenged pitch to show it was reviewed but unchanged
+- For an **overturned** ABS challenge: show the original pitch as a hollow (open) circle next to the corrected pitch (filled), both enclosed in a capsule — nothing is erased, so the sequence tells the full story
+
+**Manager challenges** operate on entire plays (safe/out, catch/trap, fair/foul), so the notation lives on the cell as a whole — a small **"Ch"** badge somewhere on the at-bat cell. There's no circled dot for manager challenges; the result reflected in the cell is the post-overturn outcome, and the badge tells you a review happened.
 
 ## In BaseballScorer
 
-BaseballScorer handles each challenge type with its own UI path, but both leave a unified marker on the scorecard cell: a small **"Ch" badge** in the top-leading corner of the at-bat cell.
+BaseballScorer handles each challenge type with its own UI path. ABS challenges produce a visible mark in the pitch-dot sequence (circled pitch or capsule); Manager challenges produce a small **"Ch" badge** in the top-leading corner of the at-bat cell.
 
 ### ABS (Pitch) Challenge
 
@@ -110,9 +111,9 @@ Tap **Confirm** to record the challenge.
 | Caught stealing | Safe (steal) | Review the at-bat's runner events → delete the CS event, add a steal event |
 | Steal | Caught stealing | Review the at-bat's runner events → replace the steal with a CS |
 
-**Scorecard badge:** any at-bat with a resolved challenge (Manager or ABS) shows a small **"Ch"** badge in the top-leading corner of the cell. The badge tells you a challenge happened on this play; the note (in the inning summary) and the corrected scoring tell you the rest of the story.
+**Scorecard badge:** an at-bat with a resolved Manager challenge shows a small **"Ch"** badge in the top-leading corner of the cell. (ABS challenges do *not* get this badge — the pitch-dot capsule / circle already conveys them.) The badge tells you a Manager challenge happened on this play; the note (in the inning summary) and the corrected scoring tell you the rest.
 
-**Challenge status bar:** A persistent indicator shows how many challenges each team has remaining. Both Manager and ABS challenges draw from the same per-team counts. The status bar updates automatically when a challenge is resolved.
+**Challenge status bar:** A persistent indicator shows how many challenges each team has remaining, broken out by pool — e.g., `ABS 2/2 • Mgr 1/1`. The two pools are separate in MLB 2026: each team gets **2 ABS challenges** and **1 Manager challenge** per game. Teams keep a challenge on an overturn (so a successful challenge doesn't decrement the remaining count); an upheld challenge consumes it. The status bar updates automatically when a challenge is resolved.
 
 <!-- TODO: Screenshot of challenge status bar showing remaining challenges for each team -->
 
