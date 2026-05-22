@@ -41,11 +41,15 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: America/New_York
+        # No --baseURL override: hugo.toml is the source of truth
+        # (https://scoring.theyawns.com/). The configure-pages action's
+        # base_url output returns HTTP when GitHub Pages's "Enforce HTTPS"
+        # setting is off, which produces HTTP canonical/og:url tags and
+        # breaks Google Search Console validation.
         run: |
           hugo \
             --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
