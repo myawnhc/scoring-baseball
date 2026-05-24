@@ -87,39 +87,82 @@ The key idea: nothing is erased. The original call is always visible as a hollow
 
 ### Manager Challenge (play challenges)
 
-For on-field replay challenges — safe/out at a base, catch/trap, fair/foul, HR boundary, stolen-base reversal — open the at-bat in the review panel (tap its cell on the scorecard, or scroll back to it in the inning column). Next to the **Pitch Challenge** button you'll see a **Manager Challenge** button. Tap it to open the Manager Challenge sheet:
+For on-field replay challenges — safe/out at a base, catch/trap, fair/foul, HR boundary, stolen-base reversal — BaseballScorer routes you through a single Manager Challenge sheet. The app figures out what you're challenging from how you opened it, and (when overturned) routes you back into the normal scoring flow to record the corrected outcome — no separate "edit scoring" step required.
 
-<!-- TODO: Screenshot of Manager Challenge sheet showing outcome picker, team picker, optional note -->
+#### Entry points
 
-The sheet has three fields:
+There are three ways to launch the sheet, picked to fit the situation:
 
-- **Outcome** — Upheld or Overturned (segmented picker)
-- **Challenging Team** — Home or Away (defaults to the batting team of the play; flip if the defense challenged)
-- **Note (optional)** — free-form text like "trap call", "missed tag at second", "fair down the line". The note appears in the inning summary alongside the play.
+**1. Review-panel button.** Open any completed at-bat in the review panel (tap its cell on the scorecard, or scroll back to it in the inning column). Next to **Pitch Challenge** you'll see a **Manager Challenge** button. Use this for at-bat-result challenges (HR, hit, out) on a recent at-bat.
+
+**2. Inning-summary long-press.** Long-press a batter card in the inning summary to get a **Challenge Call** option. This is the fastest path for an at-bat-result challenge — and, importantly, it's also how you challenge a runner event for a runner who is **no longer on a base** (e.g., a caught stealing or pickoff out): long-press the runner's batting card.
+
+![Inning-summary long-press menu with "Challenge Call" option](/images/screenshots/manager-challenge-long-press-hr.jpg)
+
+**3. Diamond tap on a runner.** Tap a base where a runner is currently standing → the runner-action sheet opens → **Challenge Call** appears as the last option whenever there's a reviewable runner event involving that runner this inning. Use this to challenge a successful steal (SB), a safe pickoff slide, or a safe call on an advancing runner.
+
+![Diamond tap → runner-action sheet → Challenge Call entry](/images/screenshots/manager-challenge-tap-base-sb.jpg)
+
+The app uses a "play has moved on" rule: once a subsequent at-bat has begun (any events on the next AB, or it's already complete), the at-bat-result challenge entry disappears from that card. Runner-event challenges remain reachable for the runner involved.
+
+#### The challenge sheet
+
+The sheet has four pieces:
+
+- **Challenging** — a one-line label showing exactly what's being reviewed, e.g., *"HR by Baldwin"* or *"Stolen base at 2B for Schwarber"*. Confirms you're on the right call before you commit.
+- **Outcome** — Upheld or Overturned.
+- **Challenging Team** — Home or Away (defaults to the batting team; flip if the defense challenged).
+- **Note (optional)** — free-form text like *"trap call"*, *"missed tag at second"*, *"fair down the line"*. Appears in the inning summary alongside the play.
+
+![Manager Challenge sheet with "Challenging: HR by Baldwin" header](/images/screenshots/manager-challenge-sheet-hr.jpg)
 
 Tap **Confirm** to record the challenge.
 
-**Upheld**: the challenge events are recorded against the at-bat, the challenging team's remaining-count decrements, and you're done. Nothing else changes — the original call stands.
+#### Upheld
 
-**Overturned**: the challenge events are recorded, and you then use the existing **Edit Scoring** flow (or the runner-event editor) to enter the corrected scoring. For example:
+The challenge events are recorded against the at-bat, the challenging team's remaining-count decrements, and you're done. Nothing else changes — the original call stands.
 
-| Original call | Overturned to | Edit you make |
-|---|---|---|
-| Flyout (catch) | Single (trap) | Edit Scoring → change result type to single |
-| Out at 1B (groundout) | Safe (infield single) | Edit Scoring → change result type to single |
-| Home run | Ground-rule double | Edit Scoring → change result type to double |
-| Caught stealing | Safe (steal) | Review the at-bat's runner events → delete the CS event, add a steal event |
-| Steal | Caught stealing | Review the at-bat's runner events → replace the steal with a CS |
+#### Overturned: at-bat result (HR / hit / out)
 
-**Scorecard badge:** an at-bat with a resolved Manager challenge shows a small **"Ch"** badge in the top-leading corner of the cell. (ABS challenges do *not* get this badge — the pitch-dot capsule / circle already conveys them.) The badge tells you a Manager challenge happened on this play; the note (in the inning summary) and the corrected scoring tell you the rest.
+The at-bat automatically reverts to in-progress. Pitch sequence is preserved; the original result and any runner-advancement events it generated are stripped; prior baserunners are restored. You then pick the corrected outcome via the normal scoring flow — which handles runner placement, RBIs, and runs for you.
 
-**Challenge status bar:** A persistent indicator shows how many challenges each team has remaining, broken out by pool — e.g., `ABS 2/2 • Mgr 1/1`. The two pools are separate in MLB 2026: each team gets **2 ABS challenges** and **1 Manager challenge** per game. Teams keep a challenge on an overturn (so a successful challenge doesn't decrement the remaining count); an upheld challenge consumes it. The status bar updates automatically when a challenge is resolved.
+Worked example — Baldwin HR overturned to a ground-rule double:
 
-<!-- TODO: Screenshot of challenge status bar showing remaining challenges for each team -->
+![Re-scoring the reverted at-bat as a double via the normal scoring flow](/images/screenshots/manager-challenge-rescore-hr-to-2b.jpg)
 
-**Known limitation: real-time challenges of runner events (CS, pickoff, thrown out).** A caught-stealing or pickoff call lands on the *currently in-progress* at-bat — the one being pitched at the time. The Manager Challenge button lives on the *completed* at-bat's review panel, so there's no entry point until that batter finishes. By then, subsequent plays (especially a home run) may have produced side-effects that don't cleanly reconcile when the runner event is flipped after the fact. **Workaround:** if a real-time runner-event challenge happens during a live game, score it immediately as the *corrected* outcome (e.g., record the steal as safe rather than a CS), and use a play note to record that a challenge was made. The Manager Challenge button + "Ch" badge will then be missing for that play. A dedicated real-time challenge entry point is planned for a future release.
+The auto-completion note **"HR call challenged, overturned to 2B"** is added to the at-bat's notes and shows in the inning summary:
 
-**Known limitation: overturns that revert to a still-live at-bat.** Some manager challenges put the at-bat back to in-progress rather than to a different final outcome — the most common is a home run overturned to a foul ball (the count goes back to where it was, the batter is still up). BaseballScorer's Edit Scoring picker today only offers terminal at-bat outcomes, so this case has no clean in-app path. **Workaround:** use single-at-bat **Undo** to roll back the entire at-bat, then re-pitch from the corrected count. You'll lose the "Ch" badge in this case (it's tied to the at-bat that no longer exists), so jot a manual note in the inning if you want to record that a challenge happened. This is rare in practice — most challenges produce a different terminal outcome, not a return to a live at-bat.
+![Inning summary after HR-to-2B overturn, with the auto-note visible](/images/screenshots/manager-challenge-result-hr-to-2b.jpg)
+
+#### Overturned: runner event (SB ↔ CS, pickoff, advance)
+
+The targeted runner event flips in place — stolen base becomes caught stealing (or vice versa), picked-off becomes safe, thrown-out becomes safe. Bases, outs, and run totals re-derive automatically.
+
+Stolen base overturned to caught stealing — runner removed from 2B, out recorded:
+
+![Sheet showing "Challenging: Stolen base at 2B for Schwarber"](/images/screenshots/manager-challenge-sheet-sb.jpg)
+![Result: runner removed from 2B, one out added, auto-note on the runner's at-bat card](/images/screenshots/manager-challenge-result-sb-to-cs.jpg)
+
+Caught stealing overturned to stolen base — runner restored to 2B, out removed:
+
+![Sheet showing "Challenging: Caught stealing at 2B for Schwarber"](/images/screenshots/manager-challenge-sheet-cs.jpg)
+![Result: runner back on 2B, out removed, auto-note on the runner's at-bat card](/images/screenshots/manager-challenge-result-cs-to-sb.jpg)
+
+The auto-note (*"SB call challenged, overturned to CS"* or *"CS call challenged, overturned to SB"*) attaches to the **runner's** batting at-bat — the play where they reached base — rather than whichever at-bat happened to be in progress when the steal/pickoff occurred. That keeps the narrative readable: each runner's card tells their full story.
+
+#### Scorecard badge
+
+An at-bat with a resolved Manager challenge shows a small **"Ch"** badge in the top-leading corner of the cell. (ABS challenges do *not* get this badge — the pitch-dot capsule / circle already conveys them.) The badge tells you a Manager challenge happened on this play; the auto-note (in the inning summary) and the corrected scoring tell you the rest.
+
+#### Challenge status bar
+
+A persistent indicator shows how many challenges each team has remaining, broken out by pool — e.g., `ABS 2/2 • Mgr 1/1`. The two pools are separate in MLB 2026: each team gets **2 ABS challenges** and **1 Manager challenge** per game. Teams keep a challenge on an overturn (so a successful challenge doesn't decrement the remaining count); an upheld challenge consumes it. The status bar updates automatically when a challenge is resolved.
+
+![Challenge status banner showing ABS and Manager pools per team](/images/screenshots/manager-challenge-status-banner.jpg)
+
+#### Known limitation: foul-ball calls
+
+A fair/foul boundary that should be Manager-challenged (e.g., a ball called foul that the fielding team believes hit fair, or vice versa) currently routes through the ABS / pitch-challenge flow, because the foul call is recorded as a pitch outcome. The reverse direction works today (HR or hit overturned *to* a foul ball flows correctly through the at-bat-result challenge path). A dedicated entry point for foul-to-fair Manager challenges is planned but not yet shipped.
 
 ---
 
