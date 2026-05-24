@@ -24,11 +24,22 @@ GitHub Pages production deploy at `scoring.theyawns.com`.
      command is the reliable path.)
    - **Build command:** download Hugo, then build with the per-deploy URL:
      ```
-     HV=0.160.1 ; curl -sL "https://github.com/gohugoio/hugo/releases/download/v${HV}/hugo_extended_${HV}_Linux-64bit.tar.gz" | tar -xzf - hugo && ./hugo --gc --minify --baseURL "$CF_PAGES_URL/"
+     curl -fsSL "https://github.com/gohugoio/hugo/releases/download/v0.160.1/hugo_extended_0.160.1_linux-amd64.tar.gz" | tar -xzf - hugo && ./hugo --gc --minify --baseURL "$CF_PAGES_URL/"
      ```
      `$CF_PAGES_URL` is supplied per-deploy by Cloudflare; using it as the
      `baseURL` keeps canonical/og:url tags pointing at the right preview
      domain instead of the production `scoring.theyawns.com`.
+     `-f` on curl makes it fail loudly if the download URL returns an
+     error page (which previously caused a confusing `gzip: not in gzip
+     format` on tar).
+
+     **Gotchas:**
+     - Hugo's Linux release artifact was renamed from `Linux-64bit` to
+       `linux-amd64` around v0.103 — make sure the URL uses the lowercase
+       hyphenated form.
+     - Avoid shell variable assignments (`HV=...; ...`) in the Cloudflare
+       build command field — they don't reliably persist. Hard-code the
+       version in the URL.
    - **Build output directory:** `public`
    - **Environment variables:**
      - `TZ = America/New_York` (optional, matches workflow)
