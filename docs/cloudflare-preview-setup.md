@@ -40,6 +40,12 @@ GitHub Pages production deploy at `scoring.theyawns.com`.
      - Avoid shell variable assignments (`HV=...; ...`) in the Cloudflare
        build command field — they don't reliably persist. Hard-code the
        version in the URL.
+     - The newer Cloudflare Workers+Pages unified build system runs
+       `npx wrangler versions upload` as the deploy step. For a static
+       site this fails with *"Missing entry-point to Worker script or
+       to assets directory"* unless there's a `wrangler.jsonc` at the
+       repo root pointing at the build output. See the file shipped at
+       `/wrangler.jsonc` — it sets `assets.directory = "./public"`.
    - **Build output directory:** `public`
    - **Environment variables:**
      - `TZ = America/New_York` (optional, matches workflow)
