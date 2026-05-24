@@ -18,18 +18,27 @@ GitHub Pages production deploy at `scoring.theyawns.com`.
 
 3. **Configure the build.**
    - **Production branch:** `main` *(optional — see below)*
-   - **Framework preset:** Hugo
-   - **Build command:**
+   - **Framework preset:** None (the "Hugo" preset on the newer Cloudflare
+     build image (v2) tries to run `npx hugo`, which fails because Hugo
+     isn't an npm package. Selecting "None" + an explicit download-and-run
+     command is the reliable path.)
+   - **Build command:** download Hugo, then build with the per-deploy URL:
      ```
-     hugo --gc --minify --baseURL "$CF_PAGES_URL/"
+     HV=0.160.1 ; curl -sL "https://github.com/gohugoio/hugo/releases/download/v${HV}/hugo_extended_${HV}_Linux-64bit.tar.gz" | tar -xzf - hugo && ./hugo --gc --minify --baseURL "$CF_PAGES_URL/"
      ```
      `$CF_PAGES_URL` is supplied per-deploy by Cloudflare; using it as the
      `baseURL` keeps canonical/og:url tags pointing at the right preview
      domain instead of the production `scoring.theyawns.com`.
    - **Build output directory:** `public`
    - **Environment variables:**
-     - `HUGO_VERSION = 0.160.1` (match the GitHub Pages workflow)
      - `TZ = America/New_York` (optional, matches workflow)
+     - The Hugo version is pinned inside the build command above; no
+       `HUGO_VERSION` env var needed.
+
+   *Alternative:* if Cloudflare exposes a "Build system v1" toggle in
+   the project's Build & deployments settings, switch to it — v1 ships
+   Hugo preinstalled and the build command simplifies to
+   `hugo --gc --minify --baseURL "$CF_PAGES_URL/"`.
 
 4. **Branch deploys.**
    - In project settings → Builds & deployments → Configure preview deploys
