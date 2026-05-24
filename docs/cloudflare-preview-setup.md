@@ -10,77 +10,86 @@ GitHub Pages production deploy at `scoring.theyawns.com`.
    [sign up](https://dash.cloudflare.com/sign-up/pages) — free tier covers
    static-site preview deploys.
 
-2. **Connect the GitHub repo.**
-   - Dashboard → Workers & Pages → Create → Pages → Connect to Git
+2. **Connect the GitHub repo as a Pages project.**
+   - Dashboard → Workers & Pages → **Create** → **Pages** (important: not
+     Workers — see the gotcha below) → Connect to Git
    - Authorize GitHub, pick `myawnhc/scoring-baseball`
    - Project name: `scoring-baseball` (this becomes the `*.pages.dev`
      subdomain)
 
+   **Gotcha**: the Cloudflare dashboard's Create flow funnels you toward
+   Workers by default. If you end up with a Workers-style project, the
+   deploy step runs `npx wrangler versions upload`, which serves a
+   default "Hello, World" page instead of your assets and is a pain to
+   reconfigure. Delete and recreate as Pages explicitly.
+
 3. **Configure the build.**
-   - **Production branch:** `main` *(optional — see below)*
-   - **Framework preset:** None (the "Hugo" preset on the newer Cloudflare
-     build image (v2) tries to run `npx hugo`, which fails because Hugo
-     isn't an npm package. Selecting "None" + an explicit download-and-run
-     command is the reliable path.)
-   - **Build command:** download Hugo, then build with the per-deploy URL:
+   - **Production branch:** the branch whose latest deploy you want at
+     the bare `<project>.pages.dev` URL. Either:
+     - Set to your current preview branch (e.g., `1.3-preview`) so the
+       bare pages.dev URL serves the unreleased docs, or
+     - Set to `main` and use Cloudflare's per-branch preview URLs for
+       unreleased branches.
+   - **Framework preset:** Hugo (Pages preinstalls Hugo and reads
+     `HUGO_VERSION`).
+   - **Build command:**
      ```
-     curl -fsSL "https://github.com/gohugoio/hugo/releases/download/v0.160.1/hugo_extended_0.160.1_linux-amd64.tar.gz" | tar -xzf - hugo && ./hugo --gc --minify --baseURL "$CF_PAGES_URL/"
+     hugo --gc --minify --baseURL "$CF_PAGES_URL/"
      ```
      `$CF_PAGES_URL` is supplied per-deploy by Cloudflare; using it as the
      `baseURL` keeps canonical/og:url tags pointing at the right preview
      domain instead of the production `scoring.theyawns.com`.
-     `-f` on curl makes it fail loudly if the download URL returns an
-     error page (which previously caused a confusing `gzip: not in gzip
-     format` on tar).
-
-     **Gotchas:**
-     - Hugo's Linux release artifact was renamed from `Linux-64bit` to
-       `linux-amd64` around v0.103 — make sure the URL uses the lowercase
-       hyphenated form.
-     - Avoid shell variable assignments (`HV=...; ...`) in the Cloudflare
-       build command field — they don't reliably persist. Hard-code the
-       version in the URL.
-     - The newer Cloudflare Workers+Pages unified build system runs
-       `npx wrangler versions upload` as the deploy step. For a static
-       site this fails with *"Missing entry-point to Worker script or
-       to assets directory"* unless there's a `wrangler.jsonc` at the
-       repo root pointing at the build output. See the file shipped at
-       `/wrangler.jsonc` — it sets `assets.directory = "./public"`.
    - **Build output directory:** `public`
    - **Environment variables:**
-     - `TZ = America/New_York` (optional, matches workflow)
-     - The Hugo version is pinned inside the build command above; no
-       `HUGO_VERSION` env var needed.
+     - `HUGO_VERSION = 0.160.1` (match `.github/workflows/hugo.yml`)
+     - `TZ = America/New_York` (optional)
 
-   *Alternative:* if Cloudflare exposes a "Build system v1" toggle in
-   the project's Build & deployments settings, switch to it — v1 ships
-   Hugo preinstalled and the build command simplifies to
-   `hugo --gc --minify --baseURL "$CF_PAGES_URL/"`.
+   *Fallback if Hugo preset breaks*: if Cloudflare's framework preset
+   regresses and runs `npx hugo` (it isn't an npm package), drop the
+   preset to "None" and replace the build command with an explicit
+   download:
+   ```
+   curl -fsSL "https://github.com/gohugoio/hugo/releases/download/v0.160.1/hugo_extended_0.160.1_linux-amd64.tar.gz" | tar -xzf - hugo && ./hugo --gc --minify --baseURL "$CF_PAGES_URL/"
+   ```
+   Use the lowercase `linux-amd64` artifact name (renamed from
+   `Linux-64bit` around Hugo v0.103). Hard-code the version — shell
+   variable assignments in Cloudflare's build-command field don't
+   reliably persist.
 
 4. **Branch deploys.**
-   - In project settings → Builds & deployments → Configure preview deploys
-   - **All non-Production branches** → enable preview deploys (Cloudflare
-     will auto-build any branch you push)
-   - Every push to `1.3-preview` will then publish at
-     `https://1.3-preview.scoring-baseball.pages.dev` (or similar)
+   - Project → **Settings → Builds & deployments → Configure preview
+     deployments**
+   - Choose **All non-Production branches** so Cloudflare auto-builds
+     any branch you push.
+   - Each push to a non-production branch publishes at
+     `https://<branch>.<project>.pages.dev` (with `<branch>` slugified).
 
-5. **Optional: custom subdomain.**
-   - In project settings → Custom domains → Add a domain
-     `next.scoring.theyawns.com` (or `preview.scoring.theyawns.com`)
+5. **Switching the production branch later.**
+   - Changing the production-branch setting in Cloudflare does NOT
+     auto-trigger a build with the new branch. To make the change
+     visible at the bare pages.dev URL, either:
+     - Push any commit (an empty `git commit --allow-empty` works) to
+       the new production branch to force a rebuild, OR
+     - In the Deployments tab, find an existing build on that branch
+       and **⋯ → Promote to production**.
+
+6. **Optional: custom subdomain.**
+   - Project → Custom domains → Add `next.scoring.theyawns.com` (or
+     similar).
    - Cloudflare shows the CNAME target to add at your DNS provider
-     (WordPress DNS for `theyawns.com`)
-   - Once DNS propagates, the preview URL is stable
+     (WordPress DNS for `theyawns.com`).
+   - Once DNS propagates, the preview URL is stable across pushes.
 
 ## Per-release flow
 
 1. Create a branch `<version>-preview` (e.g., `1.3-preview`) off `main`
    in `scoring-baseball`.
 2. Push doc updates for the unreleased app version.
-3. Cloudflare auto-deploys to `<branch>.scoring-baseball.pages.dev` (or
-   the custom subdomain if set up).
+3. Cloudflare auto-deploys to a preview URL.
 4. Share the URL in the TestFlight changelog.
-5. After the app ships and the docs are public, merge `<version>-preview`
-   into `main`. GitHub Pages picks up the change for production.
+5. After the app ships and the docs are public, merge
+   `<version>-preview` into `main`. GitHub Pages picks up the change
+   for production at `scoring.theyawns.com`.
 
 ## Important: don't change the production GitHub Pages workflow
 
